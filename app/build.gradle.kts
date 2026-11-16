@@ -1,7 +1,7 @@
 plugins { id("com.android.application"); id("org.jetbrains.kotlin.android") }
 
-val tagVersion = System.getenv("VERSION_NAME") ?: "1.0.0"
-val tagCode = System.getenv("VERSION_CODE")?.toIntOrNull() ?: 1
+val tagVersion = System.getenv("VERSION_NAME") ?: "1.0.1"
+val tagCode = System.getenv("VERSION_CODE")?.toIntOrNull() ?: 1000001
 android {
     namespace = "com.auracharge"
     compileSdk = 34
@@ -50,4 +50,5 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.2")
     implementation("androidx.core:core-ktx:1.13.1")
     testImplementation("junit:junit:4.13.2")
+    testImplementation("org.json:json:20240303")
 }

@@ -11,8 +11,8 @@ TIME = np.arange(COUNT, dtype=np.float64) / RATE
 OUTPUT = Path(__file__).resolve().parents[1] / "app/src/main/res/raw"
 OUTPUT.mkdir(parents=True, exist_ok=True)
 
-for track in range(3):
-    base = [110.0, 123.5, 98.0][track]
+for track in range(6):
+    base = [110.0, 123.5, 98.0, 82.4, 146.8, 164.8][track]
     drone = np.zeros(COUNT)
     for ratio, strength in [(1, .13), (1.5, .045), (2, .035)]:
         frequency = round(base * ratio * DURATION) / DURATION

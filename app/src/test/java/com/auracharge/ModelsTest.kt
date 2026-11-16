@@ -2,9 +2,23 @@ package com.auracharge
 
 import android.os.BatteryManager
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertTrue
 import org.junit.Test
+import java.io.File
 
 class ModelsTest {
+    @Test fun packagedLibraryLoadsAllEntries() {
+        val entries = parseLibrary(File("src/main/assets/library.json").readText(Charsets.UTF_8))
+        val source = File("../scripts/library.tsv").readLines(Charsets.UTF_8).map { it.split('|') }
+        assertTrue("Library contains ${entries.size} entries", entries.size >= 150)
+        assertEquals(source.size, entries.size)
+        source.zip(entries).forEach { (fields, entry) ->
+            assertEquals(5, fields.size)
+            assertEquals(Entry(fields[3].replace("\\n", "\n"), fields[4], fields[1], fields[2], fields[0]), entry)
+        }
+        assertTrue(entries.all { it.fa.isNotBlank() && it.tr.isNotBlank() && it.author.isNotBlank() && it.source.isNotBlank() })
+        assertEquals(setOf("poetry", "story", "wisdom", "spiritual"), entries.map { it.category }.toSet())
+    }
     @Test fun statusPriorities() {
         assertEquals(R.string.full, BatteryState(status = BatteryManager.BATTERY_STATUS_FULL, plugged = 4, currentMa = 2000).statusResource)
         assertEquals(R.string.paused, BatteryState(status = BatteryManager.BATTERY_STATUS_NOT_CHARGING, plugged = 1).statusResource)

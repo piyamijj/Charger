@@ -13,6 +13,11 @@ import kotlin.math.abs
 
 data class Entry(val fa: String, val tr: String, val author: String, val source: String, val category: String)
 
+fun parseLibrary(json: String): List<Entry> {
+    val data = JSONArray(json)
+    return (0 until data.length()).map { index -> data.getJSONObject(index).let { Entry(it.getString("fa"), it.getString("tr"), it.getString("author"), it.getString("source"), it.getString("category")) } }
+}
+
 data class BatteryState(val level: Int = 0, val status: Int = BatteryManager.BATTERY_STATUS_UNKNOWN, val plugged: Int = 0, val currentMa: Int = 0, val voltageMv: Int = 0, val temperature: Float = 0f, val remainingMs: Long = -1) {
     val connected get() = plugged != 0
     val statusResource: Int get() = when {
@@ -61,9 +66,8 @@ class ChargeViewModel(application: Application) : AndroidViewModel(application) 
     val revision = revisions.asStateFlow()
     val texts = mutableStateListOf<String>()
     val library: List<Entry> = runCatching {
-        val data = JSONArray(application.assets.open("library.json").bufferedReader().use { it.readText() })
-        (0 until data.length()).map { index -> data.getJSONObject(index).let { Entry(it.getString("fa"), it.getString("tr"), it.getString("author"), it.getString("source"), it.getString("category")) } }
-    }.getOrDefault(emptyList())
+        parseLibrary(application.assets.open("library.json").bufferedReader(Charsets.UTF_8).use { it.readText() })
+    }.onFailure { android.util.Log.e("AuraCharge", "Cannot load library", it) }.getOrDefault(emptyList())
     init {
         val data = runCatching { JSONArray(preferences.getString("texts", "[]")) }.getOrDefault(JSONArray())
         for (index in 0 until data.length()) texts.add(data.optString(index))
@@ -76,10 +80,16 @@ class ChargeViewModel(application: Application) : AndroidViewModel(application) 
     fun put(key: String, value: Float) { preferences.edit().putFloat(key, value).apply(); revisions.value++ }
     fun saveTexts() { preferences.edit().putString("texts", JSONArray(texts.toList()).toString()).apply(); revisions.value++ }
     fun entries(): List<Entry> {
+        val selected = selectedCategories()
+        val builtIn = library.filter { it.category in selected }
+        val own = if ("custom" in selected) texts.flatMap { textChunks(it).map { part -> Entry(part, part, "", "", "custom") } } else emptyList()
+        return builtIn + own
+    }
+    fun selectedCategories(): Set<String> {
         val source = get("source", "library")
         val category = get("category", "all")
-        val builtIn = if (source != "mine") library.filter { category == "all" || it.category == category } else emptyList()
-        val own = if (source != "library") texts.flatMap { textChunks(it).map { part -> Entry(part, part, "", "", "custom") } } else emptyList()
-        return builtIn + own
+        val builtIn = if (source == "mine") emptySet() else if (category == "all") setOf("poetry", "story", "wisdom", "spiritual") else setOf(category)
+        val legacy = builtIn + if (source != "library") setOf("custom") else emptySet()
+        return get("categories", legacy.joinToString(",")).split(',').filter { it.isNotBlank() }.toSet()
     }
 }

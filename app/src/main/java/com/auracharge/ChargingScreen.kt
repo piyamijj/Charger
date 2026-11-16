@@ -60,6 +60,7 @@ fun ChargingScreen(model: ChargeViewModel, battery: BatteryState, screenOn: Bool
     var elapsed by remember { mutableLongStateOf(if (reduced) 3000L else 0L) }
     var entryIndex by remember { mutableIntStateOf(0) }
     val entries = remember { model.entries().let { if (model.get("shuffle", false)) it.shuffled() else it } }
+    val initialIndex = remember { if (entries.isEmpty() || model.get("shuffle", false)) 0 else (model.get("position", "0").toIntOrNull() ?: 0) % entries.size }
     val interval = (22000 / model.get("speed", 1f)).toLong()
     LaunchedEffect(screenOn, reduced) {
         if (screenOn) {
@@ -71,11 +72,11 @@ fun ChargingScreen(model: ChargeViewModel, battery: BatteryState, screenOn: Bool
                     val now = SystemClock.elapsedRealtime()
                     val interactive = power.isInteractive
                     if (!interactive && wasInteractive) player.stop()
-                    if (interactive && !wasInteractive && model.get("music", false)) player.start(model.get("track", "1"), model.get("volume", .35f), model.get("silent", true), model.get("audio_uri", ""))
+                    if (interactive && !wasInteractive && model.get("music", true)) player.start(model.get("track", "1"), model.get("volume", .35f), model.get("silent", false), model.get("audio_uri", ""))
                     if (interactive && wasInteractive) elapsed += now - last
                     wasInteractive = interactive
                     last = now
-                    if (elapsed >= 3000 && entries.isNotEmpty()) entryIndex = (((elapsed - 3000) / interval) % entries.size).toInt()
+                    if (elapsed >= 3000 && entries.isNotEmpty()) entryIndex = ((initialIndex + (elapsed - 3000) / interval) % entries.size).toInt()
                 }
             }
         }
@@ -87,7 +88,7 @@ fun ChargingScreen(model: ChargeViewModel, battery: BatteryState, screenOn: Bool
         }
     }
     DisposableEffect(screenOn) {
-        fun play() { if (screenOn && power.isInteractive && model.get("music", false)) player.start(model.get("track", "1"), model.get("volume", .35f), model.get("silent", true), model.get("audio_uri", "")) }
+        fun play() { if (screenOn && power.isInteractive && model.get("music", true)) player.start(model.get("track", "1"), model.get("volume", .35f), model.get("silent", false), model.get("audio_uri", "")) }
         var startedByObserver = false
         val observer = LifecycleEventObserver { _, event ->
             if (event == Lifecycle.Event.ON_STOP) player.stop()
@@ -95,7 +96,7 @@ fun ChargingScreen(model: ChargeViewModel, battery: BatteryState, screenOn: Bool
         }
         activity.lifecycle.addObserver(observer)
         if (!startedByObserver && activity.lifecycle.currentState.isAtLeast(Lifecycle.State.STARTED)) play()
-        onDispose { activity.lifecycle.removeObserver(observer); player.stop(fade = screenOn) }
+        onDispose { activity.lifecycle.removeObserver(observer); player.stop(fade = screenOn); if (entries.isNotEmpty() && !model.get("shuffle", false)) model.put("position", ((entryIndex + 1) % entries.size).toString()) }
     }
     if (!screenOn) { Box(Modifier.fillMaxSize().background(Color.Black)); return }
     val dock by animateFloatAsState(if (elapsed >= 3000 || reduced) 1f else 0f, spring(stiffness = 150f), label = "dock")
@@ -105,6 +106,7 @@ fun ChargingScreen(model: ChargeViewModel, battery: BatteryState, screenOn: Bool
     val hint = stringResource(R.string.close_hint)
     BoxWithConstraints(Modifier.fillMaxSize().background(Color.Black).semantics { contentDescription = hint }.pointerInput(Unit) { detectTapGestures(onLongPress = { onClose() }) }.pointerInput(Unit) { detectDragGestures(onDragEnd = { if (drag > 100) onClose(); drag = 0f }) { _, amount -> drag += amount.y } }) {
         TextButton(onClick = onClose, modifier = Modifier.align(Alignment.TopEnd)) { Text(stringResource(R.string.close), color = Color.Gray) }
+        TextButton(onClick = { elapsed = if (elapsed < 3000) 3000 + interval else elapsed + interval - (elapsed - 3000) % interval }, modifier = Modifier.align(Alignment.TopStart), enabled = entries.isNotEmpty()) { Text(stringResource(R.string.next), color = Color.LightGray) }
         val density = LocalDensity.current
         val heightPx = with(density) { maxHeight.toPx() }
         val widthPx = with(density) { maxWidth.toPx() }
@@ -163,10 +165,12 @@ fun ChargingScreen(model: ChargeViewModel, battery: BatteryState, screenOn: Bool
             val progress = if (reduced) .5f else ((elapsed - 3000) % interval).toFloat() / interval
             val position = (.74f - .68f * progress) * heightPx
             val alpha = (if (reduced) 1f else minOf(1f, progress * 6f, (1f - progress) * 6f).coerceIn(0f, 1f)) * if (model.get("dim", false)) .55f else 1f
-            val size = textScale(progress, 14f, 34f) * model.get("size", 1f)
+            val entry = entries.getOrNull(entryIndex)
+            val length = (entry?.fa?.length ?: 0) + (entry?.tr?.length ?: 0)
+            val maximumSize = if (length > 500) 16f else if (length > 300) 20f else 34f
+            val size = textScale(progress, 14f, maximumSize) * model.get("size", 1f)
             val tint = when (model.get("color", "cream")) { "mint" -> Color(0xffb4e4d2); "gold" -> Color(0xffe7c77b); else -> Color(0xfff0e8d7) }
             val family = if (model.get("font", "sans") == "serif") FontFamily.Serif else FontFamily(Font(R.font.vazirmatn))
-            val entry = entries.getOrNull(entryIndex)
             Column(Modifier.offset { IntOffset(0, position.toInt()) }.fillMaxWidth().padding(horizontal = 24.dp).alpha(alpha), horizontalAlignment = Alignment.CenterHorizontally) {
                 if (entry == null) Text(stringResource(R.string.no_text), color = tint, textAlign = TextAlign.Center)
                 else {

@@ -600,5 +600,558 @@
     "source": "کافرون ۱۰۹:۶، برگردان معنا",
     "fa": "دین شما برای شما و دین من برای من",
     "tr": "Sizin dininiz size, benim dinim banadır."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۱",
+    "fa": "مال از بهر آسایش عمر است نه عمر از بهر گرد کردن مال.",
+    "tr": "Mal, hayatın rahatlığı içindir; hayat mal biriktirmek için değildir."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۳",
+    "fa": "دو کس رنج بیهوده بردند و سعی بی‌فایده کردند: یکی آن که اندوخت و نخورد و دیگر آن که آموخت و نکرد.",
+    "tr": "İki kişi boşuna zahmet çekti: biriktirip yararlanmayan ve öğrenip uygulamayan."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۴",
+    "fa": "علم از بهر دین پروردن است نه از بهر دنیا خوردن.",
+    "tr": "İlim dini geliştirmek içindir, dünyalık elde etmek için değil."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۵",
+    "fa": "عالم ناپرهیزگار کور مشعله‌دار است.",
+    "tr": "Sakınmayan bilgin, elinde meşale taşıyan bir kördür."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۶",
+    "fa": "مُلک از خردمندان جمال گیرد و دین از پرهیزگاران کمال یابد.",
+    "tr": "Ülke bilgelerle güzelleşir, din sakınanlarla olgunlaşır."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۷",
+    "fa": "سه چیز پایدار نماند: مال بی تجارت و علم بی بحث و ملک بی سیاست.",
+    "tr": "Üç şey kalıcı olmaz: ticaretsiz mal, tartışmasız ilim ve yönetimsiz ülke."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۸",
+    "fa": "رحم آوردن بر بدان ستم است بر نیکان، عفو کردن از ظالمان جور است بر درویشان.",
+    "tr": "Kötülere acımak iyilere zulümdür; zalimleri bağışlamak yoksullara haksızlıktır."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۱۰",
+    "fa": "هر آن سری که در سر داری با دوست در میان منه چه دانی که وقتی دشمن گردد و هر گزندی که توانی، به دشمن مرسان که باشد که وقتی دوست شود.",
+    "tr": "Her sırrını dostuna açma; bir gün düşman olabilir. Düşmanına da yapabileceğin her zararı verme; bir gün dost olabilir."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۱۲",
+    "fa": "سخن میان دو دشمن چنان گوی که گر دوست گردند شرم زده نشوی.",
+    "tr": "İki düşman arasında öyle konuş ki dost olduklarında utanmayasın."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۱۴",
+    "fa": "چون در امضای کاری متردد باشی آن طرف اختیار کن که بی آزارتر بر آید.",
+    "tr": "Bir işte kararsız kalırsan daha az zarar veren yolu seç."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۱۸",
+    "fa": "نه چندان درشتی کن که از تو سیر گردند و نه چندان نرمی که بر تو دلیر شوند.",
+    "tr": "Ne senden usanacakları kadar sert ol, ne de sana karşı cüretlenecekleri kadar yumuşak."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۱۹",
+    "fa": "دو کس دشمن ملک و دینند: پادشاه بی حلم و زاهد بی علم.",
+    "tr": "İki kişi ülkenin ve dinin düşmanıdır: sabırsız hükümdar ve bilgisiz zahit."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۲۰",
+    "fa": "آتش خشم اول در خداوند خشم اوفتد پس آنگه زبانه به خصم رسد یا نرسد.",
+    "tr": "Öfkenin ateşi önce öfkeleneni yakar; sonra alevi düşmana ulaşır ya da ulaşmaz."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۲۱",
+    "fa": "بدخوی در دستِ دشمنی گرفتار است که هر کجا رود از چنگِ عقوبتِ او خلاص نیابد.",
+    "tr": "Kötü huylu kişi, nereye giderse gitsin cezasından kurtulamadığı bir düşmanın elindedir."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۲۵",
+    "fa": "خبری که دانی که دلی بیازارد، تو خاموش تا دیگری بیارد.",
+    "tr": "Bir gönlü inciteceğini bildiğin haberi sen söyleme, bırak başkası getirsin."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۲۷",
+    "fa": "هر که نصیحتِ خودرای می‌کند، او خود به نصیحتگری محتاج است.",
+    "tr": "Kendi bildiğinden şaşmayana öğüt verenin kendisi öğüde muhtaçtır."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۲۹",
+    "fa": "متکلّم را تا کسی عیب نگیرد، سخنش صلاح نپذیرد.",
+    "tr": "Konuşanın kusurunu biri söylemedikçe sözü düzelmez."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۳۰",
+    "fa": "همه کس را عقلِ خود به کمال نماید و فرزندِ خود به جمال.",
+    "tr": "Herkese kendi aklı kusursuz, kendi çocuğu güzel görünür."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۳۱",
+    "fa": "حریص با جهانی گرسنه است و قانع به نانی سیر.",
+    "tr": "Hırslı kişi bir dünyayla bile açtır; kanaatkâr bir ekmekle doyar."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۳۲",
+    "fa": "هر که در حال توانایی نکویی نکند در وقت ناتوانی سختی بیند.",
+    "tr": "Gücü varken iyilik yapmayan, güçsüz kaldığında sıkıntı görür."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۳۳",
+    "fa": "هر چه زود بر آید دیر نپاید.",
+    "tr": "Çabuk ortaya çıkan uzun sürmez."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۳۴",
+    "fa": "کارها به صبر بر آید و مُستَعجِل به سر در آید.",
+    "tr": "İşler sabırla başarılır; aceleci baş aşağı düşer."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۳۵",
+    "fa": "نادان را به از خاموشی نیست وگر این مصلحت بدانستی نادان نبودی.",
+    "tr": "Bilgisiz için susmaktan iyisi yoktur; bunu bilseydi bilgisiz olmazdı."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۳۶",
+    "fa": "هر که با داناتر از خود بحث کند تا بدانند که داناست، بدانند که نادان است.",
+    "tr": "Bilgili görünsün diye kendinden bilgilisiyle tartışanın bilgisiz olduğu anlaşılır."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۳۷",
+    "fa": "هر که با بدان نشیند، نیکی نبیند.",
+    "tr": "Kötülerle oturup kalkan iyilik görmez."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۳۸",
+    "fa": "مردمان را عیب نهانی پیدا مکن که مر ایشان را رسوا کنی و خود را بی اعتماد.",
+    "tr": "İnsanların gizli kusurunu açığa vurma; onları utandırır, kendini güvenilmez kılarsın."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۴۰",
+    "fa": "نه هر که در مجادله چُست، در معامله درست.",
+    "tr": "Tartışmada becerikli olan herkes alışverişinde dürüst değildir."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۴۱",
+    "fa": "اگر شبها همه قدر بودی، شب قدر بی قدر بودی.",
+    "tr": "Bütün geceler Kadir gecesi olsaydı Kadir gecesinin değeri kalmazdı."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۴۲",
+    "fa": "نه هر که به صورت نکوست سیرت زیبا در اوست. کار اندرون دارد نه پوست.",
+    "tr": "Görünüşü güzel olan herkesin huyu güzel değildir; önemli olan dış değil içtir."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۴۴",
+    "fa": "پنجه با شیر زدن و مشت با شمشیر، کار خردمندان نیست.",
+    "tr": "Aslanla pençeleşmek ve kılıca yumruk vurmak akıllıların işi değildir."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۵۱",
+    "fa": "گر جاهلی به ‌زبان‌آوری بر حکیمی غالب آید عجب نیست که سنگی‌ست که گوهر همی‌شکند.",
+    "tr": "Bir cahil söz ustalığıyla bir bilgeyi yenerse şaşılmaz: taş da mücevheri kırar."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۵۳",
+    "fa": "جوهر اگر در خلاب افتد، همچنان نفیس است و غبار اگر به فلک رسد، همان خسیس.",
+    "tr": "Mücevher çamura düşse de değerlidir; toz göğe çıksa da değersizdir."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۵۴",
+    "fa": "مشک آن است که ببوید نه آن که عطار بگوید.",
+    "tr": "Misk, aktarda övülen değil, kokusunu duyurandır."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۵۵",
+    "fa": "دوستی را که به عمری فرا چنگ آرند، نشاید که به یک دم بیازارند.",
+    "tr": "Bir ömürde kazanılan dostu bir anda incitmek yakışmaz."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۵۶",
+    "fa": "رای بی‌قوّت مکر و فسون است و قوّت بی‌رای جهل و جنون.",
+    "tr": "Güçsüz düşünce hile ve büyüdür; düşüncesiz güç cehalet ve deliliktir."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۵۸",
+    "fa": "اندک اندک خیلی شود و قطره قطره سیلی گردد.",
+    "tr": "Azar azar çok olur, damla damla sel olur."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۶۱",
+    "fa": "جان در حمایت یک دم است و دنیا وجودی میان دو عدم.",
+    "tr": "Can bir nefese bağlıdır; dünya iki yokluk arasında bir varlıktır."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۶۳",
+    "fa": "هر که در زندگانی نانش نخورند، چون بمیرد نامش نبرند.",
+    "tr": "Yaşarken ekmeği yenmeyenin ölümünden sonra adı anılmaz."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۶۴",
+    "fa": "درویش ضعیف‌حال را در خشکی تنگ‌سال مپرس که «چونی؟»، الا به شرط آن که مرهم ریشش بنهی و معلومی پیشش.",
+    "tr": "Kıtlıkta güçsüz yoksula, yarasına merhem ve önüne yardım koymayacaksan, «Nasılsın?» diye sorma."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۷۰",
+    "fa": "شدت نیکان روی در فرج دارد و دولت بدان سر در نشیب.",
+    "tr": "İyilerin sıkıntısı ferahlığa yönelir; kötülerin devleti düşüşe geçer."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۷۱",
+    "fa": "حسود از نعمت حق بخیل است و بندهٔ بی گناه را دشمن می‌دارد.",
+    "tr": "Kıskanç, Tanrı'nın nimetini esirger ve suçsuz kula düşmanlık eder."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۷۲",
+    "fa": "عالم بی عمل درخت بی بر و زاهد بی علم خانهٔ بی در",
+    "tr": "İlmiyle davranmayan bilgin meyvesiz ağaç, bilgisiz zahit kapısız ev gibidir."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۷۳",
+    "fa": "مراد از نزول قرآن تحصیل سیرت خوب است نه ترتیل سورت مکتوب.",
+    "tr": "Kur'an'ın indirilmesinden maksat güzel huy edinmektir; yalnızca yazılı sureyi okumak değil."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۷۸",
+    "fa": "خلاف راه صواب است و عکس رای اولوالالباب، دارو به گمان خوردن و راه نادیده بی کاروان رفتن.",
+    "tr": "Tahminle ilaç içmek ve bilinmeyen yola kervansız çıkmak doğru yola ve akıllıların görüşüne aykırıdır."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۸۳",
+    "fa": "هر که در پیش سخن دیگران افتد تا مایهٔ فضلش بدانند، پایهٔ جهلش معلوم کند.",
+    "tr": "Bilgisini göstermek için başkasının sözünü kesen, bilgisizliğinin derecesini gösterir."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۸۴",
+    "fa": "هر که سخن نسنجد، از جوابش برنجد.",
+    "tr": "Sözünü tartmayan, aldığı yanıttan incinir."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۸۵",
+    "fa": "دروغ گفتن، به ضربتِ لازم مانَد که اگر نیز جراحت درست شود، نشان بمانَد.",
+    "tr": "Yalan söylemek, yarası iyileşse bile izi kalan bir darbeye benzer."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۸۶",
+    "fa": "سگِ حق‌شناس بِه از آدمی ناسپاس.",
+    "tr": "Vefa bilen bir köpek, nankör bir insandan iyidir."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۹۲",
+    "fa": "نیکبختان به حکایت و امثال پیشینیان پند گیرند، زآن پیشتر که پسینیان به واقعهٔ او مثل زنند.",
+    "tr": "Bahtlılar, sonrakiler kendi başlarına gelenleri örnek göstermeden önce, öncekilerin hikâyelerinden öğüt alır."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۹۴",
+    "fa": "گدای نیک انجام به از پادشای بد فرجام.",
+    "tr": "Sonu iyi olan bir dilenci, sonu kötü olan bir padişahtan iyidir."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۹۷",
+    "fa": "زر از معدن به کان کندن به در آید وز دست بخیل به جان کندن.",
+    "tr": "Altın madenden kazmayla, cimrinin elinden ise can çekişerek çıkar."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۹۸",
+    "fa": "هر که بر زیردستان نبخشاید، به جور زبردستان گرفتار آید.",
+    "tr": "Altındakilere merhamet etmeyen, üstündekilerin zulmüne uğrar."
+  },
+  {
+    "category": "wisdom",
+    "author": "سعدی",
+    "source": "گلستان، باب هشتم، حکمت ۱۰۸",
+    "fa": "دو کس مردند و حسرت بردند: یکی آن که داشت و نخورد و دیگر آن که دانست و نکرد.",
+    "tr": "İki kişi pişman öldü: sahip olup yararlanmayan ve bilip uygulamayan."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب دوم، حکایت ۴",
+    "fa": "دزدی به خانهٔ پارسایی در آمد؛ چندان که جست چیزی نیافت. دلتنگ شد. پارسا خبر شد. گلیمی که بر آن خفته بود در راه دزد انداخت تا محروم نشود.",
+    "tr": "Bir hırsız zahidin evine girdi, aradı ama bir şey bulamadı ve üzüldü. Zahit bunu anlayınca mahrum kalmasın diye üzerinde yattığı kilimi hırsızın yoluna bıraktı."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب چهارم، حکایت ۳",
+    "fa": "جوانی خردمند از فنونِ فضایل حظّی وافر داشت و طبعی نافر. چندان که در محافلِ دانشمندان نشستی، زبان سخن ببستی. باری پدرش گفت: ای پسر! تو نیز آنچه دانی، بگوی. گفت: ترسم که بپرسند از آنچه ندانم و شرمساری برم.",
+    "tr": "Bilgili bir genç âlimlerin toplantılarında susardı. Babası bir gün, «Oğlum, sen de bildiklerini söyle» dedi. Genç, «Bilmediğim bir şeyi sorarlar da utanırım diye korkarım» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب چهارم، حکایت ۵",
+    "fa": "جالینوس ابلهی را دید دست در گریبان دانشمندی زده و بی‌حرمتی همی‌کرد. گفت: اگر این نادان نبودی، کارِ وی با نادانان بدین جا نرسیدی.",
+    "tr": "Galen, bir ahmağın bir bilgenin yakasına yapışıp ona saygısızlık ettiğini gördü. «Bu kişi de bilgisiz olmasaydı işi bilgisizlerle bu noktaya varmazdı» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب چهارم، حکایت ۷",
+    "fa": "یکی را از حکما شنیدم که می‌گفت: هرگز کسی به جهلِ خویش اقرار نکرده است مگر آن کس که چون دیگری در سخن باشد، هم چنان ناتمام گفته، سخن آغاز کند.",
+    "tr": "Bir bilgeden duydum: Başkası sözünü bitirmeden konuşmaya başlayan kişi, kendi bilgisizliğini ilan etmiş olur."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب اول، حکایت ۳، گزیده",
+    "fa": "ملک‌زاده‌ای را شنیدم که کوتاه بود و حقیر و دیگر برادران بلند و خوب‌روی‌؛ باری پدر به کراهت و استحقار درو نظر می‌کرد، پسر به فراست و استبصار به جای آورد و گفت: ای پدر کوتاهِ خردمند بِه که نادانِ بلند.",
+    "tr": "Kısa boylu bir şehzadeye, uzun ve yakışıklı kardeşlerinin yanında babası küçümseyerek bakardı. Çocuk bunu anlayıp «Baba, kısa boylu akıllı, uzun boylu bilgisizden iyidir» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب دوم، حکایت ۱، گزیده",
+    "fa": "یکی از بزرگان گفت پارسایی را: چه گویی در حقِ فلان عابد که دیگران در حقِ وی به طعنه سخن‌ها گفته‌اند؟ گفت: بر ظاهرش عیب نمی‌بینم و در باطنش غیب نمی‌دانم.",
+    "tr": "Bir büyük kişi zahide, başkalarının çekiştirdiği bir ibadet ehli hakkında ne düşündüğünü sordu. Zahit, «Görünüşünde kusur görmüyorum; içindekini de bilemem» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب چهارم، حکایت ۸، گزیده",
+    "fa": "تنی چند از بندگانِ محمود گفتند حسنِ میمندی را که: سلطان امروز تو را چه گفت در فلان مصلحت؟ گفت: بر شما هم پوشیده نباشد. گفتند: آنچه با تو گوید، به امثالِ ما گفتن روا ندارد. گفت: به اعتمادِ آن که داند که نگویم، پس چرا همی‌پرسید؟",
+    "tr": "Mahmud'un adamları Hasan Meymendî'ye sultanın kendisine ne dediğini sordular. Bunun sır olduğunu söyleyince Hasan, «Söylemeyeceğime güvendiği için bana söyledi; öyleyse neden soruyorsunuz?» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب چهارم، حکایت ۹",
+    "fa": "در عقدِ بَیْع سرایی مُتَرَدِّد بودم. جهودی گفت: آخر من از کدخدایانِ این محلّتم؛ وصفِ این خانه چنان که هست از من پرس. بخر که هیچ عیبی ندارد. گفتم: به جز آن که تو همسایهٔ منی!",
+    "tr": "Bir ev satın almakta kararsızdım. Mahallenin ileri gelenlerinden biri, «Evin durumunu bana sor; hiçbir kusuru yok» dedi. «Senin komşum olmandan başka!» diye cevap verdim."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب دوم، حکایت ۶، گزیده",
+    "fa": "زاهدی مهمان پادشاهی بود. چون به طعام بنشستند، کمتر از آن خورد که ارادتِ او بود و چون به نماز برخاستند، بیش از آن کرد که عادت او، تا ظنِّ صَلاحیت در حق او زیادت کنند. […] چون به مُقام خویش آمد، سفره خواست تا تَناوُلی کند. پسری صاحبِ فراست داشت. گفت: ای پدر! باری به مجلس سلطان در، طعام نخوردی؟ گفت: در نظر ایشان چیزی نخوردم که به کار آید. گفت: نماز را هم قضا کن که چیزی نکردی که به کار آید.",
+    "tr": "Bir zahit padişahın sofrasında iyi görünmek için az yedi, namazı da alıştığından uzun kıldı. […] Eve dönünce yemek istedi. Anlayışlı oğlu nedenini sordu. Zahit orada yeterince yemediğini söyleyince oğlu, «Namazını da yeniden kıl; işe yarar bir şey yapmadın» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب دوم، حکایت ۷",
+    "fa": "یاد دارم که در ایام طُفولیّت مُتَعَبِّد بودمی و شب‌خیز و مُوْلَعِ زهد و پرهیز. شبی در خدمتِ پدر، رَحْمَةُ اللهِ عَلَیْهِ، نشسته بودم و همه شب دیده بر هم نبسته و مُصْحَفِ عزیز بر کنار گرفته و طایفه‌ای گردِ ما خفته. پدر را گفتم: از اینان یکی سر بر نمی‌دارد که دوگانه‌ای بگزارد. چنان خوابِ غفلت برده‌اند که گویی نخفته‌اند که مرده‌اند. گفت: جانِ پدر! تو نیز اگر بخفتی به از آن که در پوستینِ خلق افتی.",
+    "tr": "Çocukluğumda bir gece babamla uyanık otururken çevremizdekiler uyuyordu. Kimsenin kalkıp namaz kılmadığını söyleyerek onları kınadım. Babam, «Canım oğlum, sen de uyusaydın, insanları çekiştirmenden iyiydi» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب دوم، حکایت ۸",
+    "fa": "یکی را از بزرگان به محفلی‌اندر همی‌ستودند و در اوصافِ جمیلش مبالغه می‌کردند. سر بر آورد و گفت: من آنم که من دانم.",
+    "tr": "Bir toplantıda büyüklerden birini aşırı övüyorlardı. Başını kaldırıp «Ben kendimi bildiğim gibiyim» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب سوم، حکایت ۱",
+    "fa": "خواهندهٔ مَغْرِبی در صفِ بزّازانِ حَلَب می‌گفت: ای خداوندانِ نعمت، اگر شما را انصاف بودی و ما را قناعت، رسمِ سؤال از جهان برخاستی.",
+    "tr": "Halepli kumaşçıların arasında bir Mağripli dilenci şöyle diyordu: «Ey nimet sahipleri, sizde insaf, bizde kanaat olsaydı dilenme âdeti dünyadan kalkardı.»"
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب سوم، حکایت ۵",
+    "fa": "در سیرتِ اردشیرِ بابکان آمده است که حکیمِ عرب را پرسید که: روزی چه مایه طعام باید خوردن؟ گفت: صد دِرَم سنگ کفایت است. گفت: این قدر چه قوّت دهد؟ گفت: هٰذَا الْمِقْدارُ یَحْمِلُکَ و مٰازادَ عَلیٰ ذٰلِکَ فَاَنْتَ حامِلُهُ. یعنی این قدر تو را بر پای همی‌دارد و هر چه بر این زیادت کنی، تو حمّال آنی.",
+    "tr": "Ardeşir, Arap bilgeye günde ne kadar yemek gerektiğini sordu. Bilge yüz dirhem dedi. «Bu kadar ne güç verir?» diye sorulunca, «Bu miktar seni ayakta tutar; fazlasını ise sen taşırsın» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب چهارم، حکایت ۲",
+    "fa": "بازرگانی را هزار دینار خسارت افتاد. پسر را گفت: نباید که این سخن با کسی در میان نهی. گفت: ای پدر! فرمان تو راست، نگویم، ولکن خواهم مرا بر فایدهٔ این مطلع گردانی که: مصلحت در نهان داشتن چیست؟ گفت: تا مصیبت دو نشود؛ یکی نقصانِ مایه و دیگر شماتتِ همسایه.",
+    "tr": "Bin dinar zarar eden tüccar oğluna bunu kimseye söylememesini tembihledi. Oğlu nedenini sorunca, «Felaket iki olmasın: biri sermaye kaybı, diğeri komşunun alayı» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب اول، حکایت ۲",
+    "fa": "یکی از ملوکِ خراسان محمودِ سبکتگین را به خواب چنان دید که جمله وجود او ریخته بود و خاک شده مگر چشمان او که همچنان در چشم‌خانه همی‌گردید و نظر می‌کرد. سایر حکما از تأویل این فروماندند مگر درویشی که به جای آورد و گفت: هنوز نگران است که مُلکش با دگران است.",
+    "tr": "Horasan hükümdarlarından biri rüyasında Mahmud'un bedeninin toza dönüştüğünü, yalnız gözlerinin baktığını gördü. Bilgeler yorumlayamayınca bir derviş, «Ülkesi başkalarının elinde diye hâlâ kaygılanıyor» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب سوم، حکایت ۷، گزیده",
+    "fa": "یکی از حکما پسر را نهی همی‌کرد از بسیار خوردن که سیری مردم را رنجور کند. گفت: ای پدر! گرسنگی خلق را بکشد، نشنیده‌ای که ظریفان گفته‌اند به سیری مردن به که گرسنگی بردن. گفت: اندازه نگهدار، کُلُوا وَ اشْرَبُوا وَ لٰا تُسْرِفوُا.",
+    "tr": "Bir bilge oğluna çok yememesini öğütledi. Oğlu açlığın da insanı öldürdüğünü söyleyince babası, «Ölçüyü koru; yiyin, için, ama israf etmeyin» dedi."
+  },
+  {
+    "category": "poetry",
+    "author": "حافظ",
+    "source": "دیوان، غزل ۲",
+    "fa": "دلم ز صومعه بگرفت و خِرقِهٔ سالوس\nکجاست دِیرِ مُغان و شرابِ ناب کجا؟",
+    "tr": "Gönlüm manastırdan ve ikiyüzlülük hırkasından sıkıldı; nerede meyhane, nerede saf şarap?"
+  },
+  {
+    "category": "poetry",
+    "author": "حافظ",
+    "source": "دیوان، غزل ۲",
+    "fa": "ز رویِ دوست دلِ دشمنان چه دریابد؟\nچراغِ مُرده کجا؟ شمعِ آفتاب کجا؟",
+    "tr": "Düşmanların gönlü dostun yüzünden ne anlayabilir? Sönmüş lamba nerede, güneşin mumu nerede?"
+  },
+  {
+    "category": "poetry",
+    "author": "حافظ",
+    "source": "دیوان، غزل ۳",
+    "fa": "اگر آن تُرکِ شیرازی به‌‌ دست‌ آرَد دلِ ما را\nبه خال هِندویَش بَخشَم سَمَرقند و بُخارا را",
+    "tr": "O Şirazlı güzel gönlümü alırsa, siyah benine Semerkant ile Buhara'yı bağışlarım."
+  },
+  {
+    "category": "poetry",
+    "author": "حافظ",
+    "source": "دیوان، غزل ۳",
+    "fa": "ز عشقِ ناتمامِ ما جمالِ یار مُستَغنی‌ است\nبه آب و رنگ و خال و خط چه حاجت رویِ زیبا را؟",
+    "tr": "Yârin güzelliği bizim eksik aşkımıza muhtaç değildir; güzel yüzün boyaya, bene ve ayva tüyüne ne ihtiyacı var?"
+  },
+  {
+    "category": "poetry",
+    "author": "حافظ",
+    "source": "دیوان، غزل ۴",
+    "fa": "صبا به لُطف بگو آن غزالِ رَعنا را\nکه سَر به کوه و بیابان تو داده‌ای ما را",
+    "tr": "Ey seher yeli, o zarif ceylana lütufla söyle: bizi dağa, çöle düşüren sensin."
+  },
+  {
+    "category": "poetry",
+    "author": "حافظ",
+    "source": "دیوان، غزل ۴",
+    "fa": "به خُلق و لطف توان کرد صیدِ اهلِ نظر\nبه بند و دام نگیرند مرغِ دانا را",
+    "tr": "Gönül gözü açık olanlar güzel huy ve lütufla kazanılır; akıllı kuş bağ ve tuzakla tutulmaz."
+  },
+  {
+    "category": "poetry",
+    "author": "حافظ",
+    "source": "دیوان، غزل ۵",
+    "fa": "دل می‌رود ز دستم صاحب‌دلان خدا را\nدردا که راز پنهان خواهد شد آشکارا",
+    "tr": "Ey gönül sahipleri, Allah aşkına, gönlüm elimden gidiyor; ne acı ki gizli sır açığa çıkacak."
+  },
+  {
+    "category": "poetry",
+    "author": "حافظ",
+    "source": "دیوان، غزل ۵",
+    "fa": "کشتی‌شکستگانیم ای بادِ شُرطِه برخیز\nباشد که باز بینم دیدارِ آشنا را",
+    "tr": "Biz gemisi kırılmışlarız; ey uygun rüzgâr, kalk da belki dostun yüzünü yeniden göreyim."
+  },
+  {
+    "category": "poetry",
+    "author": "حافظ",
+    "source": "دیوان، غزل ۵",
+    "fa": "ده‌روزه مِهرِ گردون افسانه است و افسون\nنیکی به جای یاران فرصت شمار یارا",
+    "tr": "Feleğin kısa süreli sevgisi masal ve büyüdür; ey dost, dostlara iyilik etmeyi fırsat bil."
+  },
+  {
+    "category": "poetry",
+    "author": "حافظ",
+    "source": "دیوان، غزل ۵",
+    "fa": "ای صاحبِ کرامت شُکرانهٔ سلامت\nروزی تَفَقُّدی کن درویشِ بی‌نوا را",
+    "tr": "Ey cömertlik sahibi, sağlığının şükrü için bir gün yoksul dervişin hâlini sor."
   }
 ]

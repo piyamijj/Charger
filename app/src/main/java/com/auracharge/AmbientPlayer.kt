@@ -29,11 +29,11 @@ class AmbientPlayer(private val context: Context) {
     }
     private val listener = AudioManager.OnAudioFocusChangeListener { change -> if (change < 0) stop() }
     private val focus = AudioFocusRequest.Builder(AudioManager.AUDIOFOCUS_GAIN).setAudioAttributes(AudioAttributes.Builder().setUsage(AudioAttributes.USAGE_MEDIA).setContentType(AudioAttributes.CONTENT_TYPE_MUSIC).build()).setOnAudioFocusChangeListener(listener).build()
-    fun start(track: String, volume: Float, silentOnly: Boolean, custom: String) {
+    fun start(track: String, volume: Float, silentOnly: Boolean, custom: String): Boolean {
         stop()
-        playingVolume = volume
-        if (silentOnly && manager.ringerMode != AudioManager.RINGER_MODE_NORMAL) return
-        if (manager.requestAudioFocus(focus) != AudioManager.AUDIOFOCUS_REQUEST_GRANTED) return
+        playingVolume = volume.coerceIn(0f, 1f)
+        if (silentOnly && manager.ringerMode != AudioManager.RINGER_MODE_NORMAL) { Toast.makeText(context, R.string.silent_audio, Toast.LENGTH_SHORT).show(); return false }
+        if (manager.requestAudioFocus(focus) != AudioManager.AUDIOFOCUS_REQUEST_GRANTED) { Toast.makeText(context, R.string.audio_focus_error, Toast.LENGTH_SHORT).show(); return false }
         hasFocus = true
         try {
             if (silentOnly) {
@@ -44,10 +44,10 @@ class AmbientPlayer(private val context: Context) {
             player = next
             next.setAudioAttributes(AudioAttributes.Builder().setUsage(AudioAttributes.USAGE_MEDIA).setContentType(AudioAttributes.CONTENT_TYPE_MUSIC).build())
             if (track == "custom") {
-                if (custom.isBlank()) { stop(); return }
+                if (custom.isBlank()) { stop(); Toast.makeText(context, R.string.audio_error, Toast.LENGTH_SHORT).show(); return false }
                 next.setDataSource(context, Uri.parse(custom))
             } else {
-                val resource = when (track) { "2" -> R.raw.ambient2; "3" -> R.raw.ambient3; else -> R.raw.ambient1 }
+                val resource = when (track) { "2" -> R.raw.ambient2; "3" -> R.raw.ambient3; "4" -> R.raw.ambient4; "5" -> R.raw.ambient5; "6" -> R.raw.ambient6; else -> R.raw.ambient1 }
                 context.resources.openRawResourceFd(resource).use { next.setDataSource(it.fileDescriptor, it.startOffset, it.length) }
             }
             next.isLooping = true
@@ -55,9 +55,11 @@ class AmbientPlayer(private val context: Context) {
             next.prepare()
             next.start()
             val token = ++generation
-            for (step in 1..20) handler.postDelayed({ if (generation == token) runCatching { next.setVolume(volume * step / 20, volume * step / 20) } }, step * 60L)
-        } catch (_: Exception) { stop(); Toast.makeText(context, R.string.audio_error, Toast.LENGTH_SHORT).show() }
+            for (step in 1..20) handler.postDelayed({ if (generation == token) runCatching { next.setVolume(playingVolume * step / 20, playingVolume * step / 20) } }, step * 60L)
+            return true
+        } catch (_: Exception) { stop(); Toast.makeText(context, R.string.audio_error, Toast.LENGTH_SHORT).show(); return false }
     }
+    fun setVolume(volume: Float) { playingVolume = volume.coerceIn(0f, 1f); generation++; player?.setVolume(playingVolume, playingVolume) }
     fun stop(fade: Boolean = false) {
         if (watchingRinger) { context.unregisterReceiver(ringerReceiver); watchingRinger = false }
         val old = player

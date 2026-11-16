@@ -120,8 +120,20 @@ private fun Choices(label: String, current: String, options: List<Pair<String, S
 @Composable
 fun SettingsScreen(model: ChargeViewModel, onPreview: () -> Unit, onMonitor: (Boolean) -> Unit, onLanguage: () -> Unit) {
     val revision by model.revision.collectAsState()
-    val source = remember(revision) { model.get("source", "library") }
+    val selected = remember(revision) { model.selectedCategories() }
     val context = LocalContext.current
+    val audioPreview = remember { AmbientPlayer(context) }
+    var testingAudio by remember { mutableStateOf(false) }
+    var showLibrary by remember { mutableStateOf(false) }
+    DisposableEffect(Unit) { onDispose { audioPreview.stop() } }
+    DisposableEffect(context) {
+        val activity = context as ComponentActivity
+        val observer = androidx.lifecycle.LifecycleEventObserver { _, event ->
+            if (event == androidx.lifecycle.Lifecycle.Event.ON_STOP) { audioPreview.stop(); testingAudio = false }
+        }
+        activity.lifecycle.addObserver(observer)
+        onDispose { activity.lifecycle.removeObserver(observer) }
+    }
     var editing by remember { mutableIntStateOf(-2) }
     var draft by remember { mutableStateOf("") }
     val txtPicker = androidx.activity.compose.rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
@@ -143,7 +155,8 @@ fun SettingsScreen(model: ChargeViewModel, onPreview: () -> Unit, onMonitor: (Bo
     val audioPicker = androidx.activity.compose.rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
         if (uri != null) {
             runCatching { context.contentResolver.takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION) }
-            model.put("audio_uri", uri.toString()); model.put("track", "custom")
+                .onSuccess { model.put("audio_uri", uri.toString()); model.put("track", "custom") }
+                .onFailure { android.widget.Toast.makeText(context, R.string.audio_error, android.widget.Toast.LENGTH_SHORT).show() }
         }
     }
     if (editing != -2) AlertDialog(onDismissRequest = { editing = -2 }, title = { Text(stringResource(R.string.text_entry)) }, text = { OutlinedTextField(value = draft, onValueChange = { draft = it }, label = { Text(stringResource(R.string.text_hint)) }, modifier = Modifier.fillMaxWidth(), minLines = 4) }, confirmButton = { TextButton(onClick = { if (draft.isNotBlank()) { if (editing == -1) model.texts.add(draft) else model.texts[editing] = draft; model.saveTexts() }; editing = -2 }) { Text(stringResource(R.string.save)) } }, dismissButton = { TextButton(onClick = { editing = -2 }) { Text(stringResource(R.string.cancel)) } })
@@ -155,8 +168,21 @@ fun SettingsScreen(model: ChargeViewModel, onPreview: () -> Unit, onMonitor: (Bo
         Toggle(stringResource(R.string.monitor), model.get("monitor", false)) { model.put("monitor", it); onMonitor(it) }
         Text(stringResource(R.string.monitor_help), style = MaterialTheme.typography.bodySmall)
         Toggle(stringResource(R.string.lock_only), model.get("lock_only", false)) { model.put("lock_only", it) }
-        Choices(stringResource(R.string.source), source, listOf("library" to stringResource(R.string.library), "mine" to stringResource(R.string.mine), "mixed" to stringResource(R.string.mixed))) { model.put("source", it) }
-        Choices(stringResource(R.string.category), model.get("category", "all"), listOf("all" to stringResource(R.string.all), "poetry" to stringResource(R.string.poetry), "story" to stringResource(R.string.story), "wisdom" to stringResource(R.string.wisdom), "spiritual" to stringResource(R.string.spiritual))) { model.put("category", it) }
+        Text(stringResource(R.string.category), style = MaterialTheme.typography.titleMedium)
+        listOf("poetry" to stringResource(R.string.poetry), "story" to stringResource(R.string.story), "wisdom" to stringResource(R.string.wisdom), "spiritual" to stringResource(R.string.spiritual), "custom" to stringResource(R.string.mine)).forEach { (category, label) ->
+            val count = if (category == "custom") model.texts.size else model.library.count { it.category == category }
+            Toggle("$label ($count)", category in selected) { checked ->
+                model.put("categories", (if (checked) selected + category else selected - category).sorted().joinToString(","))
+                model.put("position", "0")
+            }
+        }
+        val availableEntries = remember(revision) { model.entries() }
+        OutlinedButton(onClick = { showLibrary = !showLibrary }) { Text(stringResource(if (showLibrary) R.string.hide_entries else R.string.show_entries, availableEntries.size)) }
+        if (showLibrary) availableEntries.forEachIndexed { index, entry ->
+            TextButton(onClick = { model.put("shuffle", false); model.put("position", index.toString()); onPreview() }) {
+                Text("${index + 1}. ${entry.fa.take(80)}\n${entry.tr.take(100)} · ${entry.author}", maxLines = 3)
+            }
+        }
         Choices(stringResource(R.string.display), model.get("display", "both"), listOf("both" to stringResource(R.string.both), "fa" to stringResource(R.string.persian), "tr" to stringResource(R.string.turkish))) { model.put("display", it) }
         Toggle(stringResource(R.string.shuffle), model.get("shuffle", false)) { model.put("shuffle", it) }
         SliderSetting(stringResource(R.string.speed), model.get("speed", 1f), .5f..2f) { model.put("speed", it) }
@@ -167,11 +193,13 @@ fun SettingsScreen(model: ChargeViewModel, onPreview: () -> Unit, onMonitor: (Bo
         Choices(stringResource(R.string.style), model.get("style", "ring"), listOf("ring" to stringResource(R.string.ring), "aurora" to stringResource(R.string.aurora), "lightning" to stringResource(R.string.lightning))) { model.put("style", it) }
         Toggle(stringResource(R.string.haptics), model.get("haptics", true)) { model.put("haptics", it) }
         HorizontalDivider()
-        Toggle(stringResource(R.string.music), model.get("music", false)) { model.put("music", it) }
-        Choices(stringResource(R.string.track), model.get("track", "1"), listOf("1" to "I", "2" to "II", "3" to "III", "custom" to stringResource(R.string.custom_audio))) { model.put("track", it) }
+        Toggle(stringResource(R.string.music), model.get("music", true)) { model.put("music", it) }
+        Choices(stringResource(R.string.track), model.get("track", "1"), listOf("1" to "I", "2" to "II", "3" to "III", "4" to "IV", "5" to "V", "6" to "VI", "custom" to stringResource(R.string.custom_audio))) { audioPreview.stop(); testingAudio = false; model.put("track", it) }
         Button(onClick = { audioPicker.launch(arrayOf("audio/*")) }) { Text(stringResource(R.string.choose_audio)) }
-        SliderSetting(stringResource(R.string.volume), model.get("volume", .35f), 0f..1f) { model.put("volume", it) }
-        Toggle(stringResource(R.string.silent), model.get("silent", true)) { model.put("silent", it) }
+        SliderSetting(stringResource(R.string.volume), model.get("volume", .35f), 0f..1f) { model.put("volume", it); if (testingAudio) audioPreview.setVolume(it) }
+        Toggle(stringResource(R.string.silent), model.get("silent", false)) { model.put("silent", it); audioPreview.stop(); testingAudio = false }
+        Button(onClick = { if (testingAudio) { audioPreview.stop(); testingAudio = false } else testingAudio = audioPreview.start(model.get("track", "1"), model.get("volume", .35f), model.get("silent", false), model.get("audio_uri", "")) }) { Text(stringResource(if (testingAudio) R.string.stop_music else R.string.test_music)) }
+        Text(stringResource(R.string.media_volume_help), style = MaterialTheme.typography.bodySmall)
         HorizontalDivider()
         Text(stringResource(R.string.my_texts), style = MaterialTheme.typography.titleLarge)
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
