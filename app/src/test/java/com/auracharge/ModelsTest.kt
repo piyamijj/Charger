@@ -46,6 +46,24 @@ class ModelsTest {
         assertTrue("Religious category has $count sourced hadith; at least 28 required", count >= 28)
         assertTrue("Hadith must outnumber other religious selections", count > entries.count { it.category == "religious" } - count)
     }
+    @Test fun storiesHaveCompleteLengthMoralAndDistinctReferences() {
+        val stories = parseLibrary(File("src/main/assets/library.json").readText(Charsets.UTF_8)).filter { it.category == "story" }
+        assertEquals(40, stories.size)
+        assertEquals(stories.size, stories.map { it.source }.toSet().size)
+        stories.forEach { story ->
+            val wordCount = story.tr.trim().split(Regex("\\s+")).size
+            assertTrue("${story.source}: $wordCount words", wordCount in 80..200)
+            assertTrue("${story.source}: missing moral", story.tr.contains("\nÖğüt: "))
+            assertTrue("${story.source}: missing Persian summary", story.fa.isNotBlank())
+            assertTrue("${story.source}: contains an excerpt marker", !story.tr.contains("[…]"))
+        }
+    }
+    @Test fun storiesReceiveMoreReadingTime() {
+        val story = Entry("خلاصه", List(100) { "kelime" }.joinToString(" "), "سعدی", "گلستان", "story")
+        assertTrue(entryDurationMs(story, 1f) > entryDurationMs(story.copy(category = "poetry"), 1f))
+        assertEquals(entryDurationMs(story, 1f) / 2, entryDurationMs(story, 2f))
+        assertEquals(22_000L, entryDurationMs(null, 1f))
+    }
     @Test fun statusPriorities() {
         assertEquals(R.string.full, BatteryState(status = BatteryManager.BATTERY_STATUS_FULL, plugged = 4, currentMa = 2000).statusResource)
         assertEquals(R.string.paused, BatteryState(status = BatteryManager.BATTERY_STATUS_NOT_CHARGING, plugged = 1).statusResource)

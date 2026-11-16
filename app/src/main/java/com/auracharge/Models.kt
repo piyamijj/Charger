@@ -42,6 +42,14 @@ data class BatteryState(val level: Int = 0, val status: Int = BatteryManager.BAT
 
 fun textScale(progress: Float, minimum: Float, maximum: Float): Float = minimum + (maximum - minimum) * progress.coerceIn(0f, 1f)
 
+fun entryDurationMs(entry: Entry?, speed: Float): Long {
+    val base = if (entry?.category == "story") {
+        val words = entry.tr.trim().split(Regex("\\s+")).size
+        maxOf(22_000L, words * 60_000L / 130L + 8_000L)
+    } else 22_000L
+    return (base / speed.coerceIn(.5f, 2f)).toLong()
+}
+
 fun textChunks(text: String, limit: Int = 160): List<String> {
     val chunks = mutableListOf<String>()
     var start = 0

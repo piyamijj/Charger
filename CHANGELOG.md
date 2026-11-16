@@ -5,6 +5,7 @@
 - Added 40 Arabic educational verses with Turkish working translations and takeaways; poetry has 40 selections, and the religious category has 28 sourced hadith excerpts and 12 Quran meanings.
 - Bundled the owner's six MP3 files, added per-category rotation and global overrides.
 - Added sourced Saadi hikâye excerpts, bringing the poetry, story, religious sayings and educational verse categories to 40 each; retained the earlier wisdom and spiritual selections.
+- Replaced all 40 story selections with complete Turkish adaptations, each with a Persian summary and moral; added a longer, scrollable reading view.
 
 ## 1.0.1
 

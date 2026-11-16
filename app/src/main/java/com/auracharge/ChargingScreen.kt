@@ -13,6 +13,9 @@ import androidx.compose.animation.core.spring
 import androidx.activity.ComponentActivity
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
+import androidx.compose.foundation.interaction.collectIsDraggedAsState
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.gestures.detectDragGestures
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.*
@@ -61,11 +64,12 @@ fun ChargingScreen(model: ChargeViewModel, battery: BatteryState, screenOn: Bool
     val entries = remember { model.entries().let { if (model.get("shuffle", false)) it.shuffled() else it } }
     val initialIndex = remember { if (entries.isEmpty() || model.get("shuffle", false)) 0 else (model.get("position", "0").toIntOrNull() ?: 0) % entries.size }
     var entryIndex by remember { mutableIntStateOf(initialIndex) }
+    var entryElapsed by remember { mutableLongStateOf(0L) }
+    var entrySequence by remember { mutableIntStateOf(0) }
     val firstCategory = entries.getOrNull(initialIndex)?.category ?: "custom"
     val trackCounts = remember { mutableMapOf(firstCategory to 1) }
     var activeTrack by remember { mutableStateOf(resolveTrack("category", firstCategory, 0)) }
-    var lastEntryIndex by remember { mutableIntStateOf(initialIndex) }
-    val interval = (22000 / model.get("speed", 1f)).toLong()
+    val speed = model.get("speed", 1f)
     fun play() {
         if (screenOn && power.isInteractive && model.get("music", true)) {
             val selected = model.get("track", "category")
@@ -84,10 +88,20 @@ fun ChargingScreen(model: ChargeViewModel, battery: BatteryState, screenOn: Bool
                     val interactive = power.isInteractive
                     if (!interactive && wasInteractive) player.stop()
                     if (interactive && !wasInteractive) play()
-                    if (interactive && wasInteractive) elapsed += now - last
+                    if (interactive && wasInteractive) {
+                        val previous = elapsed
+                        elapsed += now - last
+                        if (elapsed >= 3000 && entries.isNotEmpty()) {
+                            entryElapsed += elapsed - maxOf(previous, 3000L)
+                            while (entryElapsed >= entryDurationMs(entries[entryIndex], speed)) {
+                                entryElapsed -= entryDurationMs(entries[entryIndex], speed)
+                                entryIndex = (entryIndex + 1) % entries.size
+                                entrySequence++
+                            }
+                        }
+                    }
                     wasInteractive = interactive
                     last = now
-                    if (elapsed >= 3000 && entries.isNotEmpty()) entryIndex = ((initialIndex + (elapsed - 3000) / interval) % entries.size).toInt()
                 }
             }
         }
@@ -108,9 +122,8 @@ fun ChargingScreen(model: ChargeViewModel, battery: BatteryState, screenOn: Bool
         if (!startedByObserver && activity.lifecycle.currentState.isAtLeast(Lifecycle.State.STARTED)) play()
         onDispose { activity.lifecycle.removeObserver(observer); player.stop(fade = screenOn); if (entries.isNotEmpty() && !model.get("shuffle", false)) model.put("position", ((entryIndex + 1) % entries.size).toString()) }
     }
-    LaunchedEffect(entryIndex) {
-        if (entryIndex != lastEntryIndex) {
-            lastEntryIndex = entryIndex
+    LaunchedEffect(entrySequence) {
+        if (entrySequence > 0) {
             val category = entries.getOrNull(entryIndex)?.category ?: "custom"
             val count = trackCounts[category] ?: 0
             activeTrack = resolveTrack("category", category, count)
@@ -126,7 +139,7 @@ fun ChargingScreen(model: ChargeViewModel, battery: BatteryState, screenOn: Bool
     val hint = stringResource(R.string.close_hint)
     BoxWithConstraints(Modifier.fillMaxSize().background(Color.Black).semantics { contentDescription = hint }.pointerInput(Unit) { detectTapGestures(onLongPress = { onClose() }) }.pointerInput(Unit) { detectDragGestures(onDragEnd = { if (drag > 100) onClose(); drag = 0f }) { _, amount -> drag += amount.y } }) {
         TextButton(onClick = onClose, modifier = Modifier.align(Alignment.TopEnd)) { Text(stringResource(R.string.close), color = Color.Gray) }
-        TextButton(onClick = { elapsed = if (elapsed < 3000) 3000 + interval else elapsed + interval - (elapsed - 3000) % interval }, modifier = Modifier.align(Alignment.TopStart), enabled = entries.isNotEmpty()) { Text(stringResource(R.string.next), color = Color.LightGray) }
+        TextButton(onClick = { elapsed = maxOf(elapsed, 3000L); entryIndex = (entryIndex + 1) % entries.size; entryElapsed = 0L; entrySequence++ }, modifier = Modifier.align(Alignment.TopStart), enabled = entries.isNotEmpty()) { Text(stringResource(R.string.next), color = Color.LightGray) }
         val density = LocalDensity.current
         val heightPx = with(density) { maxHeight.toPx() }
         val widthPx = with(density) { maxWidth.toPx() }
@@ -182,16 +195,20 @@ fun ChargingScreen(model: ChargeViewModel, battery: BatteryState, screenOn: Bool
             }
         }
         if (elapsed >= 3000 && dock > .6f) {
-            val progress = if (reduced) .5f else ((elapsed - 3000) % interval).toFloat() / interval
+            val entry = entries.getOrNull(entryIndex)
+            val progress = if (reduced) .5f else entryElapsed.toFloat() / entryDurationMs(entry, speed)
             val position = (.74f - .68f * progress) * heightPx
             val alpha = (if (reduced) 1f else minOf(1f, progress * 6f, (1f - progress) * 6f).coerceIn(0f, 1f)) * if (model.get("dim", false)) .55f else 1f
-            val entry = entries.getOrNull(entryIndex)
             val length = (entry?.fa?.length ?: 0) + (entry?.tr?.length ?: 0)
             val maximumSize = if (length > 500) 16f else if (length > 300) 20f else 34f
             val size = textScale(progress, 14f, maximumSize) * model.get("size", 1f)
             val tint = when (model.get("color", "cream")) { "mint" -> Color(0xffb4e4d2); "gold" -> Color(0xffe7c77b); else -> Color(0xfff0e8d7) }
             val family = if (model.get("font", "sans") == "serif") FontFamily.Serif else FontFamily(Font(R.font.vazirmatn))
-            Column(Modifier.offset { IntOffset(0, position.toInt()) }.fillMaxWidth().padding(horizontal = 24.dp).alpha(alpha), horizontalAlignment = Alignment.CenterHorizontally) {
+            if (entry?.category == "story") {
+                key(entrySequence) {
+                    StoryText(entry, progress, reduced, model.get("display", "both"), family, tint, model.get("size", 1f), Modifier.align(Alignment.TopCenter).padding(top = 64.dp, bottom = 132.dp).fillMaxWidth().heightIn(max = (maxHeight - 196.dp).coerceAtLeast(80.dp)))
+                }
+            } else Column(Modifier.offset { IntOffset(0, position.toInt()) }.fillMaxWidth().padding(horizontal = 24.dp).alpha(alpha), horizontalAlignment = Alignment.CenterHorizontally) {
                 if (entry == null) Text(stringResource(R.string.no_text), color = tint, textAlign = TextAlign.Center)
                 else {
                     val display = model.get("display", "both")
@@ -201,5 +218,27 @@ fun ChargingScreen(model: ChargeViewModel, battery: BatteryState, screenOn: Bool
                 }
             }
         }
+    }
+}
+
+@Composable
+private fun StoryText(entry: Entry, progress: Float, reduced: Boolean, display: String, family: FontFamily, tint: Color, scale: Float, modifier: Modifier = Modifier) {
+    val scroll = rememberScrollState()
+    val dragged by scroll.interactionSource.collectIsDraggedAsState()
+    var manuallyScrolled by remember { mutableStateOf(false) }
+    LaunchedEffect(dragged) { if (dragged) manuallyScrolled = true }
+    LaunchedEffect(progress, scroll.maxValue, manuallyScrolled) {
+        if (!reduced && !manuallyScrolled) {
+            val fraction = ((progress - .08f) / .84f).coerceIn(0f, 1f)
+            scroll.scrollTo((scroll.maxValue * fraction).toInt())
+        }
+    }
+    Column(modifier.verticalScroll(scroll).padding(horizontal = 24.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+        if (display != "tr") {
+            Text(stringResource(R.string.story_summary), textAlign = TextAlign.Center, color = tint.copy(alpha = .65f), fontSize = 11.sp)
+            Text(entry.fa, style = TextStyle(textDirection = TextDirection.Content), textAlign = TextAlign.Center, fontFamily = family, fontSize = (15 * scale).sp, lineHeight = (23 * scale).sp, color = tint)
+        }
+        if (display != "fa") Text(entry.tr, textAlign = TextAlign.Start, fontFamily = family, fontSize = (16 * scale).sp, lineHeight = (24 * scale).sp, color = tint)
+        Text("${entry.author} · ${entry.source}", textAlign = TextAlign.Center, color = tint.copy(alpha = .65f), fontSize = 11.sp)
     }
 }
