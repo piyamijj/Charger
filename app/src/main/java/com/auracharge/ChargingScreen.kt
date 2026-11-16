@@ -58,10 +58,21 @@ fun ChargingScreen(model: ChargeViewModel, battery: BatteryState, screenOn: Bool
     val lowEnd = remember { Build.VERSION.SDK_INT < 29 || context.getSystemService(ActivityManager::class.java).isLowRamDevice }
     val reduced = remember { Settings.Global.getFloat(context.contentResolver, Settings.Global.ANIMATOR_DURATION_SCALE, 1f) == 0f }
     var elapsed by remember { mutableLongStateOf(if (reduced) 3000L else 0L) }
-    var entryIndex by remember { mutableIntStateOf(0) }
     val entries = remember { model.entries().let { if (model.get("shuffle", false)) it.shuffled() else it } }
     val initialIndex = remember { if (entries.isEmpty() || model.get("shuffle", false)) 0 else (model.get("position", "0").toIntOrNull() ?: 0) % entries.size }
+    var entryIndex by remember { mutableIntStateOf(initialIndex) }
+    val firstCategory = entries.getOrNull(initialIndex)?.category ?: "custom"
+    val trackCounts = remember { mutableMapOf(firstCategory to 1) }
+    var activeTrack by remember { mutableStateOf(resolveTrack("category", firstCategory, 0)) }
+    var lastEntryIndex by remember { mutableIntStateOf(initialIndex) }
     val interval = (22000 / model.get("speed", 1f)).toLong()
+    fun play() {
+        if (screenOn && power.isInteractive && model.get("music", true)) {
+            val selected = model.get("track", "category")
+            val track = if (selected == "category") activeTrack else selected
+            player.start(track, model.get("volume", .35f), model.get("silent", false), model.get("audio_uri", ""))
+        }
+    }
     LaunchedEffect(screenOn, reduced) {
         if (screenOn) {
             activity.lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
@@ -72,7 +83,7 @@ fun ChargingScreen(model: ChargeViewModel, battery: BatteryState, screenOn: Bool
                     val now = SystemClock.elapsedRealtime()
                     val interactive = power.isInteractive
                     if (!interactive && wasInteractive) player.stop()
-                    if (interactive && !wasInteractive && model.get("music", true)) player.start(model.get("track", "1"), model.get("volume", .35f), model.get("silent", false), model.get("audio_uri", ""))
+                    if (interactive && !wasInteractive) play()
                     if (interactive && wasInteractive) elapsed += now - last
                     wasInteractive = interactive
                     last = now
@@ -88,7 +99,6 @@ fun ChargingScreen(model: ChargeViewModel, battery: BatteryState, screenOn: Bool
         }
     }
     DisposableEffect(screenOn) {
-        fun play() { if (screenOn && power.isInteractive && model.get("music", true)) player.start(model.get("track", "1"), model.get("volume", .35f), model.get("silent", false), model.get("audio_uri", "")) }
         var startedByObserver = false
         val observer = LifecycleEventObserver { _, event ->
             if (event == Lifecycle.Event.ON_STOP) player.stop()
@@ -97,6 +107,16 @@ fun ChargingScreen(model: ChargeViewModel, battery: BatteryState, screenOn: Bool
         activity.lifecycle.addObserver(observer)
         if (!startedByObserver && activity.lifecycle.currentState.isAtLeast(Lifecycle.State.STARTED)) play()
         onDispose { activity.lifecycle.removeObserver(observer); player.stop(fade = screenOn); if (entries.isNotEmpty() && !model.get("shuffle", false)) model.put("position", ((entryIndex + 1) % entries.size).toString()) }
+    }
+    LaunchedEffect(entryIndex) {
+        if (entryIndex != lastEntryIndex) {
+            lastEntryIndex = entryIndex
+            val category = entries.getOrNull(entryIndex)?.category ?: "custom"
+            val count = trackCounts[category] ?: 0
+            activeTrack = resolveTrack("category", category, count)
+            trackCounts[category] = count + 1
+            if (model.get("track", "category") == "category" && activity.lifecycle.currentState.isAtLeast(Lifecycle.State.STARTED)) play()
+        }
     }
     if (!screenOn) { Box(Modifier.fillMaxSize().background(Color.Black)); return }
     val dock by animateFloatAsState(if (elapsed >= 3000 || reduced) 1f else 0f, spring(stiffness = 150f), label = "dock")

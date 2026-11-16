@@ -10,6 +10,27 @@
     "category": "poetry",
     "author": "حافظ",
     "source": "دیوان، غزل ۱",
+    "fa": "به بویِ نافه‌ای کآخِر صبا زان طُرّه بُگشاید\nز تابِ جَعدِ مشکینش چه خون افتاد در دل‌ها",
+    "tr": "Sabah yelinin o saçtan bir misk kokusu getirmesi ümidiyle, misk kokulu buklelerinin kıvrımından gönüllere nice kan düştü."
+  },
+  {
+    "category": "poetry",
+    "author": "حافظ",
+    "source": "دیوان، غزل ۱",
+    "fa": "مرا در منزلِ جانان چه امنِ عیش، چون هر دَم\nجَرَس فریاد می‌دارد که بَربندید مَحمِل‌ها",
+    "tr": "Sevgilinin konağında nasıl huzur bulabilirim? Çan durmadan mahmilleri bağlayın diye sesleniyor."
+  },
+  {
+    "category": "poetry",
+    "author": "حافظ",
+    "source": "دیوان، غزل ۱",
+    "fa": "به مِی سجّاده رنگین کُن گَرَت پیرِ مُغان گوید\nکه سالِک بی‌خبر نَبْوَد ز راه و رسمِ منزل‌ها",
+    "tr": "Meyhane piri söylerse seccadeni şarapla boya; yolcu konakların yolunu ve âdetini bilmez değildir."
+  },
+  {
+    "category": "poetry",
+    "author": "حافظ",
+    "source": "دیوان، غزل ۱",
     "fa": "شب تاریک و بیم موج و گردابی چنین هایل\nکجا دانند حال ما سبکباران ساحل‌ها",
     "tr": "Karanlık gece, dalga korkusu ve böylesine korkunç bir girdap: kıyıdaki hafif yüklüler hâlimizi nereden bilsin?"
   },
@@ -217,84 +238,84 @@
     "tr": "Padişah «Ne diyor?» diye sordu. İyi huylu vezirlerden biri, «Efendim, öfkelerini yutanlardan ve insanları bağışlayanlardan söz ediyor» dedi. Padişahın merhameti uyandı ve esiri bağışladı."
   },
   {
-    "category": "spiritual",
+    "category": "religious",
     "author": "قرآن",
     "source": "فاتحه ۱:۱، برگردان معنا",
     "fa": "به نام خداوند بخشنده مهربان",
     "tr": "Rahman ve Rahim Allah'ın adıyla."
   },
   {
-    "category": "spiritual",
+    "category": "religious",
     "author": "قرآن",
     "source": "فاتحه ۱:۲، برگردان معنا",
     "fa": "ستایش مخصوص خداوند، پروردگار جهانیان است",
     "tr": "Hamd, âlemlerin Rabbi Allah'a mahsustur."
   },
   {
-    "category": "spiritual",
+    "category": "religious",
     "author": "قرآن",
     "source": "فاتحه ۱:۳، برگردان معنا",
     "fa": "بخشنده و مهربان",
     "tr": "O, Rahman ve Rahim'dir."
   },
   {
-    "category": "spiritual",
+    "category": "religious",
     "author": "قرآن",
     "source": "فاتحه ۱:۴، برگردان معنا",
     "fa": "مالک روز جزاست",
     "tr": "Hesap gününün sahibidir."
   },
   {
-    "category": "spiritual",
+    "category": "religious",
     "author": "قرآن",
     "source": "فاتحه ۱:۵، برگردان معنا",
     "fa": "تنها تو را می‌پرستیم و تنها از تو یاری می‌خواهیم",
     "tr": "Yalnız sana kulluk eder, yalnız senden yardım dileriz."
   },
   {
-    "category": "spiritual",
+    "category": "religious",
     "author": "قرآن",
     "source": "فاتحه ۱:۶، برگردان معنا",
     "fa": "ما را به راه راست هدایت کن",
     "tr": "Bizi doğru yola ilet."
   },
   {
-    "category": "spiritual",
+    "category": "religious",
     "author": "قرآن",
     "source": "فاتحه ۱:۷، برگردان معنا",
     "fa": "راه کسانی که به آنان نعمت دادی، نه آنان که بر ایشان خشم گرفته شده و نه گمراهان",
     "tr": "Kendilerine nimet verdiklerinin yoluna; gazaba uğrayanların ve sapmışların yoluna değil."
   },
   {
-    "category": "spiritual",
+    "category": "religious",
     "author": "قرآن",
     "source": "ضحی ۹۳:۱، برگردان معنا",
     "fa": "سوگند به روشنایی روز",
     "tr": "Kuşluk vaktine yemin olsun."
   },
   {
-    "category": "spiritual",
+    "category": "religious",
     "author": "قرآن",
     "source": "ضحی ۹۳:۲، برگردان معنا",
     "fa": "و سوگند به شب آنگاه که آرام گیرد",
     "tr": "Sükûna erdiğinde geceye yemin olsun."
   },
   {
-    "category": "spiritual",
+    "category": "religious",
     "author": "قرآن",
     "source": "ضحی ۹۳:۳، برگردان معنا",
     "fa": "پروردگارت تو را رها نکرده و بر تو خشم نگرفته است",
     "tr": "Rabbin seni terk etmedi ve sana darılmadı."
   },
   {
-    "category": "spiritual",
+    "category": "religious",
     "author": "قرآن",
     "source": "ضحی ۹۳:۴، برگردان معنا",
     "fa": "و آخرت برای تو از دنیا بهتر است",
     "tr": "Sonrası senin için öncesinden daha hayırlıdır."
   },
   {
-    "category": "spiritual",
+    "category": "religious",
     "author": "قرآن",
     "source": "ضحی ۹۳:۵، برگردان معنا",
     "fa": "و پروردگارت به زودی به تو خواهد بخشید تا خشنود شوی",
@@ -1153,5 +1174,635 @@
     "source": "دیوان، غزل ۵",
     "fa": "ای صاحبِ کرامت شُکرانهٔ سلامت\nروزی تَفَقُّدی کن درویشِ بی‌نوا را",
     "tr": "Ey cömertlik sahibi, sağlığının şükrü için bir gün yoksul dervişin hâlini sor."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 93:9",
+    "fa": "فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ",
+    "tr": "Öyleyse yetime kötü davranma.\nÖğüt: Yetimleri koru."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 93:10",
+    "fa": "وَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ",
+    "tr": "Bir şey isteyeni azarlama.\nÖğüt: İhtiyaç sahibine şefkat göster."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 93:11",
+    "fa": "وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
+    "tr": "Rabbinin nimetini anlat.\nÖğüt: Nimetleri hatırla ve paylaş."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 94:5",
+    "fa": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+    "tr": "Kuşkusuz güçlükle birlikte kolaylık vardır.\nÖğüt: Zorlukta umudu koru."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 94:7",
+    "fa": "فَإِذَا فَرَغْتَ فَٱنصَبْ",
+    "tr": "Bir işi bitirdiğinde başka bir işe koyul.\nÖğüt: Çabayı sürdür."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 94:8",
+    "fa": "وَإِلَىٰ رَبِّكَ فَٱرْغَب",
+    "tr": "Yalnız Rabbine yönel.\nÖğüt: Ümidini Allah'a bağla."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 103:3",
+    "fa": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
+    "tr": "İman edip iyi işler yapan, birbirine hakkı ve sabrı öğütleyenler bunun dışındadır.\nÖğüt: İyiliği, hakkı ve sabrı paylaş."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 49:11",
+    "fa": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا يَسْخَرْ قَوْمٌۭ مِّن قَوْمٍ عَسَىٰٓ أَن يَكُونُوا۟ خَيْرًۭا مِّنْهُمْ وَلَا نِسَآءٌۭ مِّن نِّسَآءٍ عَسَىٰٓ أَن يَكُنَّ خَيْرًۭا مِّنْهُنَّ ۖ وَلَا تَلْمِزُوٓا۟ أَنفُسَكُمْ وَلَا تَنَابَزُوا۟ بِٱلْأَلْقَٰبِ ۖ بِئْسَ ٱلِٱسْمُ ٱلْفُسُوقُ بَعْدَ ٱلْإِيمَٰنِ ۚ وَمَن لَّمْ يَتُبْ فَأُو۟لَٰٓئِكَ هُمُ ٱلظَّٰلِمُونَ",
+    "tr": "Ey iman edenler! Bir topluluk başka bir toplulukla alay etmesin; belki onlar kendilerinden daha iyidir. Kadınlar da başka kadınlarla alay etmesin; belki onlar kendilerinden daha iyidir. Birbirinizi ayıplamayın, kötü lakaplarla çağırmayın. İmandan sonra yoldan çıkmışlıkla anılmak ne kötüdür! Tövbe etmeyenler zalimlerin kendileridir.\nÖğüt: Kimseyi küçümseme veya incitme."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 49:12",
+    "fa": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱجْتَنِبُوا۟ كَثِيرًۭا مِّنَ ٱلظَّنِّ إِنَّ بَعْضَ ٱلظَّنِّ إِثْمٌۭ ۖ وَلَا تَجَسَّسُوا۟ وَلَا يَغْتَب بَّعْضُكُم بَعْضًا ۚ أَيُحِبُّ أَحَدُكُمْ أَن يَأْكُلَ لَحْمَ أَخِيهِ مَيْتًۭا فَكَرِهْتُمُوهُ ۚ وَٱتَّقُوا۟ ٱللَّهَ ۚ إِنَّ ٱللَّهَ تَوَّابٌۭ رَّحِيمٌۭ",
+    "tr": "Ey iman edenler! Zannın çoğundan sakının; bazı zanlar günahtır. Birbirinizin gizlisini araştırmayın ve gıybet etmeyin. Biriniz ölü kardeşinin etini yemeyi ister mi? Bundan tiksinirsiniz. Allah'a karşı gelmekten sakının; Allah tövbeyi çok kabul eder, çok merhametlidir.\nÖğüt: Zandan, tecessüsten ve gıybetten sakın."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 49:13",
+    "fa": "يَٰٓأَيُّهَا ٱلنَّاسُ إِنَّا خَلَقْنَٰكُم مِّن ذَكَرٍۢ وَأُنثَىٰ وَجَعَلْنَٰكُمْ شُعُوبًۭا وَقَبَآئِلَ لِتَعَارَفُوٓا۟ ۚ إِنَّ أَكْرَمَكُمْ عِندَ ٱللَّهِ أَتْقَىٰكُمْ ۚ إِنَّ ٱللَّهَ عَلِيمٌ خَبِيرٌۭ",
+    "tr": "Ey insanlar! Sizi bir erkek ve bir kadından yarattık; birbirinizi tanımanız için halklara ve kabilelere ayırdık. Allah katında en değerliniz, O'na karşı gelmekten en çok sakınanınızdır. Allah bilendir, her şeyden haberdardır.\nÖğüt: İnsanları kökenlerine göre üstün görme."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 17:23",
+    "fa": "۞ وَقَضَىٰ رَبُّكَ أَلَّا تَعْبُدُوٓا۟ إِلَّآ إِيَّاهُ وَبِٱلْوَٰلِدَيْنِ إِحْسَٰنًا ۚ إِمَّا يَبْلُغَنَّ عِندَكَ ٱلْكِبَرَ أَحَدُهُمَآ أَوْ كِلَاهُمَا فَلَا تَقُل لَّهُمَآ أُفٍّۢ وَلَا تَنْهَرْهُمَا وَقُل لَّهُمَا قَوْلًۭا كَرِيمًۭا",
+    "tr": "Rabbin yalnız kendisine kulluk etmenizi ve anne babaya iyilik etmenizi buyurdu. Onlardan biri veya ikisi yanında yaşlanırsa onlara öf bile deme, onları azarlama; ikisine de güzel söz söyle.\nÖğüt: Anne babaya saygılı davran."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 17:24",
+    "fa": "وَٱخْفِضْ لَهُمَا جَنَاحَ ٱلذُّلِّ مِنَ ٱلرَّحْمَةِ وَقُل رَّبِّ ٱرْحَمْهُمَا كَمَا رَبَّيَانِى صَغِيرًۭا",
+    "tr": "Merhametle onlara alçak gönüllülük kanadını indir ve de ki: Rabbim, onlar beni küçükken yetiştirdikleri gibi sen de onlara merhamet et.\nÖğüt: Anne babana merhametle yaklaş."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 17:26",
+    "fa": "وَءَاتِ ذَا ٱلْقُرْبَىٰ حَقَّهُۥ وَٱلْمِسْكِينَ وَٱبْنَ ٱلسَّبِيلِ وَلَا تُبَذِّرْ تَبْذِيرًا",
+    "tr": "Yakına, yoksula ve yolda kalmışa hakkını ver; malını saçıp savurma.\nÖğüt: Paylaş ve savurganlıktan kaçın."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 17:27",
+    "fa": "إِنَّ ٱلْمُبَذِّرِينَ كَانُوٓا۟ إِخْوَٰنَ ٱلشَّيَٰطِينِ ۖ وَكَانَ ٱلشَّيْطَٰنُ لِرَبِّهِۦ كَفُورًۭا",
+    "tr": "Savurganlar şeytanların kardeşleridir; şeytan ise Rabbine karşı nankördür.\nÖğüt: Nimetleri savurma."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 17:29",
+    "fa": "وَلَا تَجْعَلْ يَدَكَ مَغْلُولَةً إِلَىٰ عُنُقِكَ وَلَا تَبْسُطْهَا كُلَّ ٱلْبَسْطِ فَتَقْعُدَ مَلُومًۭا مَّحْسُورًا",
+    "tr": "Elini boynuna bağlayıp cimrilik etme, büsbütün de açma; yoksa kınanmış ve çaresiz kalırsın.\nÖğüt: Harcarken dengeli ol."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 17:34",
+    "fa": "وَلَا تَقْرَبُوا۟ مَالَ ٱلْيَتِيمِ إِلَّا بِٱلَّتِى هِىَ أَحْسَنُ حَتَّىٰ يَبْلُغَ أَشُدَّهُۥ ۚ وَأَوْفُوا۟ بِٱلْعَهْدِ ۖ إِنَّ ٱلْعَهْدَ كَانَ مَسْـُٔولًۭا",
+    "tr": "Erginliğe erişinceye kadar yetimin malına ancak en iyi biçimde yaklaşın. Verdiğiniz sözü yerine getirin; sözden sorumluluk vardır.\nÖğüt: Emaneti ve sözü koru."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 17:35",
+    "fa": "وَأَوْفُوا۟ ٱلْكَيْلَ إِذَا كِلْتُمْ وَزِنُوا۟ بِٱلْقِسْطَاسِ ٱلْمُسْتَقِيمِ ۚ ذَٰلِكَ خَيْرٌۭ وَأَحْسَنُ تَأْوِيلًۭا",
+    "tr": "Ölçtüğünüzde ölçüyü tam yapın, doğru teraziyle tartın. Bu daha hayırlı ve sonuç bakımından daha güzeldir.\nÖğüt: Ticarette dürüst ol."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 17:36",
+    "fa": "وَلَا تَقْفُ مَا لَيْسَ لَكَ بِهِۦ عِلْمٌ ۚ إِنَّ ٱلسَّمْعَ وَٱلْبَصَرَ وَٱلْفُؤَادَ كُلُّ أُو۟لَٰٓئِكَ كَانَ عَنْهُ مَسْـُٔولًۭا",
+    "tr": "Bilmediğin şeyin peşine düşme; kulak, göz ve gönül, bunların hepsi yaptıklarından sorumludur.\nÖğüt: Bilgi olmadan hüküm verme."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 17:37",
+    "fa": "وَلَا تَمْشِ فِى ٱلْأَرْضِ مَرَحًا ۖ إِنَّكَ لَن تَخْرِقَ ٱلْأَرْضَ وَلَن تَبْلُغَ ٱلْجِبَالَ طُولًۭا",
+    "tr": "Yeryüzünde böbürlenerek yürüme; ne yeri yarabilirsin ne de dağların boyuna erişebilirsin.\nÖğüt: Alçak gönüllü ol."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 16:90",
+    "fa": "۞ إِنَّ ٱللَّهَ يَأْمُرُ بِٱلْعَدْلِ وَٱلْإِحْسَٰنِ وَإِيتَآئِ ذِى ٱلْقُرْبَىٰ وَيَنْهَىٰ عَنِ ٱلْفَحْشَآءِ وَٱلْمُنكَرِ وَٱلْبَغْىِ ۚ يَعِظُكُمْ لَعَلَّكُمْ تَذَكَّرُونَ",
+    "tr": "Allah adaleti, iyiliği ve yakınlara yardım etmeyi emreder; hayâsızlığı, kötülüğü ve azgınlığı yasaklar. Öğüt alasınız diye size öğüt verir.\nÖğüt: Adalet ve iyiliği gözet."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 2:153",
+    "fa": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱسْتَعِينُوا۟ بِٱلصَّبْرِ وَٱلصَّلَوٰةِ ۚ إِنَّ ٱللَّهَ مَعَ ٱلصَّٰبِرِينَ",
+    "tr": "Ey iman edenler! Sabır ve namazla yardım isteyin. Allah sabredenlerle beraberdir.\nÖğüt: Sabırla dayan ve yardım iste."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 2:195",
+    "fa": "وَأَنفِقُوا۟ فِى سَبِيلِ ٱللَّهِ وَلَا تُلْقُوا۟ بِأَيْدِيكُمْ إِلَى ٱلتَّهْلُكَةِ ۛ وَأَحْسِنُوٓا۟ ۛ إِنَّ ٱللَّهَ يُحِبُّ ٱلْمُحْسِنِينَ",
+    "tr": "Allah yolunda harcayın, kendinizi kendi ellerinizle tehlikeye atmayın ve iyilik yapın. Allah iyilik yapanları sever.\nÖğüt: İyilik yaparken kendini tehlikeye atma."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 2:263",
+    "fa": "۞ قَوْلٌۭ مَّعْرُوفٌۭ وَمَغْفِرَةٌ خَيْرٌۭ مِّن صَدَقَةٍۢ يَتْبَعُهَآ أَذًۭى ۗ وَٱللَّهُ غَنِىٌّ حَلِيمٌۭ",
+    "tr": "Güzel bir söz ve bağışlama, ardından incitme gelen sadakadan daha hayırlıdır. Allah hiçbir şeye muhtaç değildir, yumuşak davranandır.\nÖğüt: Yardımı incitmeden yap."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 4:58",
+    "fa": "۞ إِنَّ ٱللَّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا۟ ٱلْأَمَٰنَٰتِ إِلَىٰٓ أَهْلِهَا وَإِذَا حَكَمْتُم بَيْنَ ٱلنَّاسِ أَن تَحْكُمُوا۟ بِٱلْعَدْلِ ۚ إِنَّ ٱللَّهَ نِعِمَّا يَعِظُكُم بِهِۦٓ ۗ إِنَّ ٱللَّهَ كَانَ سَمِيعًۢا بَصِيرًۭا",
+    "tr": "Allah emanetleri sahiplerine vermenizi ve insanlar arasında hükmettiğinizde adaletle hükmetmenizi emreder. Allah size ne güzel öğüt veriyor! Allah işitendir, görendir.\nÖğüt: Emaneti ve adaleti gözet."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 5:8",
+    "fa": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُونُوا۟ قَوَّٰمِينَ لِلَّهِ شُهَدَآءَ بِٱلْقِسْطِ ۖ وَلَا يَجْرِمَنَّكُمْ شَنَـَٔانُ قَوْمٍ عَلَىٰٓ أَلَّا تَعْدِلُوا۟ ۚ ٱعْدِلُوا۟ هُوَ أَقْرَبُ لِلتَّقْوَىٰ ۖ وَٱتَّقُوا۟ ٱللَّهَ ۚ إِنَّ ٱللَّهَ خَبِيرٌۢ بِمَا تَعْمَلُونَ",
+    "tr": "Ey iman edenler! Allah için hakkı ayakta tutan, adaletle şahitlik edenler olun. Bir topluluğa öfkeniz sizi adaletsizliğe sürüklemesin. Adil olun; bu, Allah'a karşı gelmekten sakınmaya daha yakındır. Allah'tan sakının; Allah yaptıklarınızdan haberdardır.\nÖğüt: Öfkeye rağmen adil davran."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 7:31",
+    "fa": "۞ يَٰبَنِىٓ ءَادَمَ خُذُوا۟ زِينَتَكُمْ عِندَ كُلِّ مَسْجِدٍۢ وَكُلُوا۟ وَٱشْرَبُوا۟ وَلَا تُسْرِفُوٓا۟ ۚ إِنَّهُۥ لَا يُحِبُّ ٱلْمُسْرِفِينَ",
+    "tr": "Ey Âdemoğulları! Her mescide gidişinizde güzel giysilerinizi giyin. Yiyin, için, fakat israf etmeyin; Allah israf edenleri sevmez.\nÖğüt: Ölçülü tüket."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 7:199",
+    "fa": "خُذِ ٱلْعَفْوَ وَأْمُرْ بِٱلْعُرْفِ وَأَعْرِضْ عَنِ ٱلْجَٰهِلِينَ",
+    "tr": "Bağışlama yolunu tut, iyiliği emret ve bilgisizlerden yüz çevir.\nÖğüt: Bağışlayıcı ol ve iyiliği öğütle."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 25:63",
+    "fa": "وَعِبَادُ ٱلرَّحْمَٰنِ ٱلَّذِينَ يَمْشُونَ عَلَى ٱلْأَرْضِ هَوْنًۭا وَإِذَا خَاطَبَهُمُ ٱلْجَٰهِلُونَ قَالُوا۟ سَلَٰمًۭا",
+    "tr": "Rahman'ın kulları yeryüzünde alçak gönüllülükle yürür; bilgisizler kendilerine sataştığında selam derler.\nÖğüt: Kibre ve sataşmaya kapılma."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 25:67",
+    "fa": "وَٱلَّذِينَ إِذَآ أَنفَقُوا۟ لَمْ يُسْرِفُوا۟ وَلَمْ يَقْتُرُوا۟ وَكَانَ بَيْنَ ذَٰلِكَ قَوَامًۭا",
+    "tr": "Onlar harcadıklarında ne israf ne de cimrilik eder; bu ikisi arasında dengeli davranırlar.\nÖğüt: Harcarken orta yolu seç."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 31:17",
+    "fa": "يَٰبُنَىَّ أَقِمِ ٱلصَّلَوٰةَ وَأْمُرْ بِٱلْمَعْرُوفِ وَٱنْهَ عَنِ ٱلْمُنكَرِ وَٱصْبِرْ عَلَىٰ مَآ أَصَابَكَ ۖ إِنَّ ذَٰلِكَ مِنْ عَزْمِ ٱلْأُمُورِ",
+    "tr": "Yavrucuğum! Namazı kıl, iyiliği emret, kötülükten sakındır ve başına gelenlere sabret. Bunlar kararlılık gerektiren işlerdendir.\nÖğüt: İyiliği destekle ve sabret."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 31:18",
+    "fa": "وَلَا تُصَعِّرْ خَدَّكَ لِلنَّاسِ وَلَا تَمْشِ فِى ٱلْأَرْضِ مَرَحًا ۖ إِنَّ ٱللَّهَ لَا يُحِبُّ كُلَّ مُخْتَالٍۢ فَخُورٍۢ",
+    "tr": "İnsanları küçümseyip yüz çevirme, yeryüzünde böbürlenerek yürüme. Allah kendini beğenip övünenleri sevmez.\nÖğüt: Başkalarına karşı kibirli olma."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 31:19",
+    "fa": "وَٱقْصِدْ فِى مَشْيِكَ وَٱغْضُضْ مِن صَوْتِكَ ۚ إِنَّ أَنكَرَ ٱلْأَصْوَٰتِ لَصَوْتُ ٱلْحَمِيرِ",
+    "tr": "Yürüyüşünde ölçülü ol ve sesini alçalt. Seslerin en çirkini eşeklerin sesidir.\nÖğüt: Davranış ve sesinde ölçülü ol."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 41:34",
+    "fa": "وَلَا تَسْتَوِى ٱلْحَسَنَةُ وَلَا ٱلسَّيِّئَةُ ۚ ٱدْفَعْ بِٱلَّتِى هِىَ أَحْسَنُ فَإِذَا ٱلَّذِى بَيْنَكَ وَبَيْنَهُۥ عَدَٰوَةٌۭ كَأَنَّهُۥ وَلِىٌّ حَمِيمٌۭ",
+    "tr": "İyilikle kötülük bir olmaz. Sen kötülüğü en güzel olanla sav; o zaman aranda düşmanlık bulunan kişi yakın bir dost gibi olabilir.\nÖğüt: Kötülüğe iyilikle karşılık ver."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 55:9",
+    "fa": "وَأَقِيمُوا۟ ٱلْوَزْنَ بِٱلْقِسْطِ وَلَا تُخْسِرُوا۟ ٱلْمِيزَانَ",
+    "tr": "Tartıyı adaletle yapın, terazide eksiklik yapmayın.\nÖğüt: Ölçü ve tartıda adil ol."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 83:1",
+    "fa": "وَيْلٌۭ لِّلْمُطَفِّفِينَ",
+    "tr": "Ölçüde hile yapanların vay hâline!\nÖğüt: Hileli ölçüden sakın."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 83:2",
+    "fa": "ٱلَّذِينَ إِذَا ٱكْتَالُوا۟ عَلَى ٱلنَّاسِ يَسْتَوْفُونَ",
+    "tr": "Onlar insanlardan ölçerek aldıklarında tam alırlar.\nÖğüt: Kendin için istediğin ölçüyü başkalarından esirgeme."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 83:3",
+    "fa": "وَإِذَا كَالُوهُمْ أَو وَّزَنُوهُمْ يُخْسِرُونَ",
+    "tr": "Ama başkalarına ölçüp tartarak verdiklerinde eksik verirler.\nÖğüt: Başkalarına eksik verme."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 94:6",
+    "fa": "إِنَّ مَعَ ٱلْعُسْرِ يُسْرًۭا",
+    "tr": "Gerçekten güçlükle birlikte kolaylık vardır.\nÖğüt: Zorluk karşısında ümitsizliğe kapılma."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 95:6",
+    "fa": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ فَلَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍۢ",
+    "tr": "Ancak iman edip iyi işler yapanlar başka; onlar için kesintisiz bir ödül vardır.\nÖğüt: İman ve iyi işler önemlidir."
+  },
+  {
+    "category": "educational",
+    "author": "القرآن",
+    "source": "Kur’an 109:6",
+    "fa": "لَكُمْ دِينُكُمْ وَلِىَ دِينِ",
+    "tr": "Sizin dininiz size, benim dinim banadır.\nÖğüt: İnanç farklılığı karşısında sınırları gözet."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 1 (alıntı)",
+    "fa": "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى",
+    "tr": "Ameller niyetlere bağlıdır ve herkese niyet ettiği vardır."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 10 (alıntı)",
+    "fa": "الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ، وَالْمُهَاجِرُ مَنْ هَجَرَ مَا نَهَى اللَّهُ عَنْهُ",
+    "tr": "Müslüman, Müslümanların dilinden ve elinden güvende olduğu kişidir. Muhacir de Allah'ın yasakladıklarını terk edendir."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 12 (alıntı)",
+    "fa": "تُطْعِمُ الطَّعَامَ، وَتَقْرَأُ السَّلاَمَ عَلَى مَنْ عَرَفْتَ وَمَنْ لَمْ تَعْرِفْ",
+    "tr": "Yemek yedirmen, tanıdığına da tanımadığına da selam vermendir."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 13 (alıntı)",
+    "fa": "لا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ",
+    "tr": "Sizden biri kendisi için istediğini kardeşi için de istemedikçe iman etmiş olmaz."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 15 (alıntı)",
+    "fa": "لاَ يُؤْمِنُ أَحَدُكُمْ حَتَّى أَكُونَ أَحَبَّ إِلَيْهِ مِنْ وَالِدِهِ وَوَلَدِهِ وَالنَّاسِ أَجْمَعِينَ",
+    "tr": "Sizden biri beni babasından, çocuğundan ve bütün insanlardan daha çok sevmedikçe iman etmiş olmaz."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 24 (alıntı)",
+    "fa": "دَعْهُ فَإِنَّ الْحَيَاءَ مِنَ الإِيمَانِ",
+    "tr": "Onu bırak; hayâ imandandır."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 33 (alıntı)",
+    "fa": "آيَةُ الْمُنَافِقِ ثَلاَثٌ إِذَا حَدَّثَ كَذَبَ، وَإِذَا وَعَدَ أَخْلَفَ، وَإِذَا اؤْتُمِنَ خَانَ",
+    "tr": "Münafığın belirtisi üçtür: konuştuğunda yalan söyler, söz verdiğinde sözünden döner ve kendisine emanet edildiğinde ihanet eder."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 48 (alıntı)",
+    "fa": "سِبَابُ الْمُسْلِمِ فُسُوقٌ، وَقِتَالُهُ كُفْرٌ",
+    "tr": "Müslümana sövmek fasıklık, onunla savaşmak küfürdür."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 55 (alıntı)",
+    "fa": "إِذَا أَنْفَقَ الرَّجُلُ عَلَى أَهْلِهِ يَحْتَسِبُهَا فَهُوَ لَهُ صَدَقَةٌ",
+    "tr": "Bir kişi ailesine sevabını Allah'tan umarak harcama yaparsa bu onun için sadakadır."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 56 (alıntı)",
+    "fa": "إِنَّكَ لَنْ تُنْفِقَ نَفَقَةً تَبْتَغِي بِهَا وَجْهَ اللَّهِ إِلَّا أُجِرْتَ عَلَيْهَا حَتَّى مَا تَجْعَلُ فِي فَمِ امْرَأَتِكَ",
+    "tr": "Allah'ın rızasını arayarak yaptığın her harcama için, eşinin ağzına koyduğun lokmaya varıncaya kadar, sevap alırsın."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 69 (alıntı)",
+    "fa": "يَسِّرُوا وَلاَ تُعَسِّرُوا، وَبَشِّرُوا وَلاَ تُنَفِّرُوا",
+    "tr": "Kolaylaştırın, zorlaştırmayın; müjdeleyin, nefret ettirmeyin."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 6011 (alıntı)",
+    "fa": "تَرَى الْمُؤْمِنِينَ فِي تَرَاحُمِهِمْ وَتَوَادِّهِمْ وَتَعَاطُفِهِمْ كَمَثَلِ الْجَسَدِ إِذَا اشْتَكَى عُضْوًا تَدَاعَى لَهُ سَائِرُ جَسَدِهِ بِالسَّهَرِ وَالْحُمَّى",
+    "tr": "Müminleri birbirlerine merhamet, sevgi ve şefkat göstermede bir beden gibi görürsün; bir organı rahatsızlanınca bedenin geri kalanı uykusuzluk ve ateşle ona katılır."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 6018 (alıntı)",
+    "fa": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلاَ يُؤْذِ جَارَهُ، وَمَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيُكْرِمْ ضَيْفَهُ، وَمَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",
+    "tr": "Allah'a ve ahiret gününe inanan komşusuna eziyet etmesin. Allah'a ve ahiret gününe inanan misafirine ikram etsin. Allah'a ve ahiret gününe inanan ya hayır söylesin ya da sussun."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 6026 (alıntı)",
+    "fa": "الْمُؤْمِنُ لِلْمُؤْمِنِ كَالْبُنْيَانِ، يَشُدُّ بَعْضُهُ بَعْضًا",
+    "tr": "Müminin mümine bağlılığı, parçaları birbirini güçlendiren bir bina gibidir."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 6065 (alıntı)",
+    "fa": "لاَ تَبَاغَضُوا، وَلاَ تَحَاسَدُوا، وَلاَ تَدَابَرُوا، وَكُونُوا عِبَادَ اللَّهِ إِخْوَانًا، وَلاَ يَحِلُّ لِمُسْلِمٍ أَنْ يَهْجُرَ أَخَاهُ فَوْقَ ثَلاَثَةِ أَيَّامٍ",
+    "tr": "Birbirinize kin tutmayın, haset etmeyin, sırt çevirmeyin; ey Allah'ın kulları, kardeş olun. Bir Müslümanın kardeşine üç günden fazla küsmesi helal değildir."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 6066 (alıntı)",
+    "fa": "إِيَّاكُمْ وَالظَّنَّ، فَإِنَّ الظَّنَّ أَكْذَبُ الْحَدِيثِ، وَلاَ تَحَسَّسُوا، وَلاَ تَجَسَّسُوا، وَلاَ تَنَاجَشُوا، وَلاَ تَحَاسَدُوا، وَلاَ تَبَاغَضُوا، وَلاَ تَدَابَرُوا، وَكُونُوا عِبَادَ اللَّهِ إِخْوَانًا",
+    "tr": "Zandan sakının; zan sözlerin en yalanıdır. Birbirinizin kusurunu araştırmayın, casusluk yapmayın, aldatıcı biçimde fiyat yükseltmeyin, haset etmeyin, kin tutmayın, sırt çevirmeyin. Ey Allah'ın kulları, kardeş olun."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 6114 (alıntı)",
+    "fa": "لَيْسَ الشَّدِيدُ بِالصُّرَعَةِ، إِنَّمَا الشَّدِيدُ الَّذِي يَمْلِكُ نَفْسَهُ عِنْدَ الْغَضَبِ",
+    "tr": "Güçlü, güreşte başkasını yenen değil; öfkelendiğinde kendine hâkim olandır."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 6116 (alıntı)",
+    "fa": "لاَ تَغْضَبْ",
+    "tr": "Öfkelenme."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 6117 (alıntı)",
+    "fa": "الْحَيَاءُ لاَ يَأْتِي إِلاَّ بِخَيْرٍ",
+    "tr": "Hayâ ancak hayır getirir."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 6138 (alıntı)",
+    "fa": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيُكْرِمْ ضَيْفَهُ، وَمَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيَصِلْ رَحِمَهُ، وَمَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",
+    "tr": "Allah'a ve ahiret gününe inanan misafirine ikram etsin. Allah'a ve ahiret gününe inanan akrabalık bağını sürdürsün. Allah'a ve ahiret gününe inanan ya hayır söylesin ya da sussun."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 5641 (alıntı)",
+    "fa": "مَا يُصِيبُ الْمُسْلِمَ مِنْ نَصَبٍ وَلاَ وَصَبٍ وَلاَ هَمٍّ وَلاَ حُزْنٍ وَلاَ أَذًى وَلاَ غَمٍّ حَتَّى الشَّوْكَةِ يُشَاكُهَا، إِلاَّ كَفَّرَ اللَّهُ بِهَا مِنْ خَطَايَاهُ",
+    "tr": "Müslümana yorgunluk, hastalık, kaygı, üzüntü, eziyet veya kederden, hatta ayağına batan dikene kadar ne isabet ederse Allah bununla onun hatalarından bir kısmını siler."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 6412 (alıntı)",
+    "fa": "نِعْمَتَانِ مَغْبُونٌ فِيهِمَا كَثِيرٌ مِنَ النَّاسِ، الصِّحَّةُ وَالْفَرَاغُ",
+    "tr": "İnsanların çoğunun değerini bilmediği iki nimet vardır: sağlık ve boş vakit."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 6416 (alıntı)",
+    "fa": "كُنْ فِي الدُّنْيَا كَأَنَّكَ غَرِيبٌ، أَوْ عَابِرُ سَبِيلٍ",
+    "tr": "Dünyada bir yabancı veya yolcu gibi ol."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 6421 (alıntı)",
+    "fa": "يَكْبَرُ ابْنُ آدَمَ وَيَكْبَرُ مَعَهُ اثْنَانِ حُبُّ الْمَالِ، وَطُولُ الْعُمُرِ",
+    "tr": "İnsanoğlu yaşlanır; onunla birlikte iki şey büyür: mal sevgisi ve uzun ömür arzusu."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 6464 (alıntı)",
+    "fa": "سَدِّدُوا وَقَارِبُوا، وَاعْلَمُوا أَنْ لَنْ يُدْخِلَ أَحَدَكُمْ عَمَلُهُ الْجَنَّةَ، وَأَنَّ أَحَبَّ الأَعْمَالِ أَدْوَمُهَا إِلَى اللَّهِ، وَإِنْ قَلَّ",
+    "tr": "Doğru davranmaya çalışın ve ölçülü olun. Bilin ki hiçbirinizi ameli cennete sokmaz; Allah'a en sevimli ameller az da olsa sürekli olanlardır."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 6478 (alıntı)",
+    "fa": "إِنَّ الْعَبْدَ لَيَتَكَلَّمُ بِالْكَلِمَةِ مِنْ رِضْوَانِ اللَّهِ لاَ يُلْقِي لَهَا بَالاً، يَرْفَعُ اللَّهُ بِهَا دَرَجَاتٍ، وَإِنَّ الْعَبْدَ لَيَتَكَلَّمُ بِالْكَلِمَةِ مِنْ سَخَطِ اللَّهِ لاَ يُلْقِي لَهَا بَالاً يَهْوِي بِهَا فِي جَهَنَّمَ",
+    "tr": "Kul, Allah'ın hoşnut olduğu bir sözü önemsemeden söyleyebilir; Allah onunla derecelerini yükseltir. Kul, Allah'ın hoşnut olmadığı bir sözü önemsemeden söyleyebilir; onunla cehenneme düşer."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 6013 (alıntı)",
+    "fa": "مَنْ لاَ يَرْحَمُ لاَ يُرْحَمُ",
+    "tr": "Merhamet etmeyene merhamet edilmez."
+  },
+  {
+    "category": "religious",
+    "author": "محمد",
+    "source": "Buhârî, Sahih, 2076 (alıntı)",
+    "fa": "رَحِمَ اللَّهُ رَجُلاً سَمْحًا إِذَا بَاعَ، وَإِذَا اشْتَرَى، وَإِذَا اقْتَضَى",
+    "tr": "Allah, satarken, satın alırken ve alacağını isterken kolaylık gösteren kişiye merhamet etsin."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 1، حکایت 11، گزیده",
+    "fa": "درویشی مُسْتَجاب‌الدَّعوة در بغداد پدید آمد. حَجّاجِ یوسف را خبر کردند. بخواندش و گفت: دعایِ خیری بر من بکن. گفت: خدایا! جانش بستان. گفت: از بهرِ خدای این چه دعاست؟ گفت: این دعایِ خیر است تو را و جملهْ مسلمانان را.",
+    "tr": "Bağdat'ta duası kabul edilen bir derviş ortaya çıktı. Haccâc'a haber verdiler; onu çağırıp kendisi için hayır duası istedi. Derviş, «Allah'ım, canını al» dedi. Haccâc, «Allah aşkına, bu nasıl dua?» diye sordu. Derviş, «Bu hem senin hem bütün Müslümanların iyiliği için duadır» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 1، حکایت 12، گزیده",
+    "fa": "یکی از ملوکِ بی‌انصاف پارسایی را پرسید؛ از عبادت‌ها کدام فاضل‌تر است؟ گفت: تو را خوابِ نیمروز تا در آن، یک‌نفس خلق را نیازاری.",
+    "tr": "Adaletsiz bir hükümdar, bir zahide hangi ibadetin üstün olduğunu sordu. Zahit, «Senin için öğle uykusudur; böylece o süre içinde halka eziyet etmezsin» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 1، حکایت 19، گزیده",
+    "fa": "آورده‌اند که نوشین‌روانِ عادل را در شکارگاهی صَید کباب کردند و نمک نبود. غلامی به روستا رفت تا نمک آرد. نوشیروان گفت: نمک به قیمت بستان تا رسمی نشود و ده خراب نگردد. گفتند: از این قدر چه خَلَل آید؟ گفت: بنیادِ ظلم در جهان اوّل اندکی بوده‌است هر که آمد بر او مَزیدی کرده تا بدین غایت رسیده.",
+    "tr": "Adil Nûşirevan'a avda et kızarttılar, fakat tuz yoktu. Bir hizmetkâr tuz getirmek için köye gitti. Nûşirevan, bunun alışkanlık olup köyü yıkıma sürüklememesi için tuzun parasını vermesini söyledi. «Bu kadarcık şeyden ne zarar gelir?» dediklerinde, «Dünyada zulüm başlangıçta azdı; gelen herkes ona biraz daha ekledi ve bu noktaya vardı» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 1، حکایت 21، گزیده",
+    "fa": "مردم‌آزاری را حکایت کنند که سنگی بر سر صالحی زد. درویش را مجالِ انتقام نبود. سنگ را نگاه همی‌داشت تا زمانی که مَلِک را بر آن لشکری خشم آمد و در چاه کرد. درویش اندر آمد و سنگ در سرش کوفت. گفتا: تو کیستی و مرا این سنگ چرا زدی؟ گفت: من فلانم و این همان سنگ است که در فلان تاریخ بر سر من زدی. گفت: چندین روزگار کجا بودی؟ گفت: از جاهت اندیشه همی‌کردم. اکنون که در چاهت دیدم، فرصت غنیمت دانستم.",
+    "tr": "Bir zorba, salih bir kişinin başına taş atmıştı. Derviş intikam alamadığı için taşı sakladı. Sonunda hükümdar o askere kızıp onu kuyuya attırdı. Derviş gelip taşı onun başına vurdu. Adam kim olduğunu ve neden vurduğunu sordu. Derviş, «Ben falancayım; bu da bir gün başıma attığın taş» dedi. Adam bunca zaman nerede olduğunu sorunca, «Makamından çekiniyordum; seni kuyuda görünce fırsat bildim» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 1، حکایت 25، گزیده",
+    "fa": "یکی از ملوکِ عرب شنیدم که متعلّقان را همی‌گفت: مرسومِ فلان را چندان که هست مُضاعَف کنید که مُلازِمِ درگاه است و مترصّدِ فرمان؛ و دیگر خدمتکاران به لَهْو و لَعِب مشغول‌اند و در اَدایِ خدمت مُتَهاوِن. صاحب‌دلی بشنید و فریاد و خروش از نِهادش بر آمد. پرسیدندش: چه دیدی؟ گفت: مراتبِ بندگان به درگاهِ خداوند، تَعالیٰ، همین مثال دارد.",
+    "tr": "Bir Arap hükümdarının adamlarına, «Falancanın ücretini iki katına çıkarın; çünkü sarayda bulunup emre hazır bekliyor. Diğer hizmetkârlar ise eğlenceye dalıp görevlerini ihmal ediyor» dediğini duydum. Bunu işiten bir gönül ehli feryat etti. Nedenini sorduklarında, «Kulların Allah katındaki dereceleri de buna benzer» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 2، حکایت 13، گزیده",
+    "fa": "پارسایی را دیدم بر کنارِ دریا که زخمِ پلنگ داشت و به هیچ دارو بِه نمی‌شد. مدّتها در آن رنجور بود و شکر خدای، عَزَّوَجَّلَ، عَلَی‌الدَّوام گفتی. پرسیدندش که شکر چه می‌گویی؟ گفت: شکر آن که به مصیبتی گرفتارم نه به معصیتی.",
+    "tr": "Deniz kıyısında, kaplan yarası hiçbir ilaçla iyileşmeyen bir zahit gördüm. Uzun süre bu acıyı çektiği hâlde sürekli Allah'a şükrediyordu. Neye şükrettiği sorulunca, «Bir günaha değil, bir musibete uğradığıma» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 2، حکایت 15، گزیده",
+    "fa": "پادشاهی پارسایی را دید.  گفت: هیچت از ما یاد آید؟ گفت: بلی! وقتی که خدا را فراموش می‌کنم.",
+    "tr": "Bir hükümdar bir zahide, «Bizi hiç hatırlar mısın?» diye sordu. Zahit, «Evet, Allah'ı unuttuğum zaman» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 2، حکایت 16، گزیده",
+    "fa": "یکی از جملهٔ صالحان به خواب دید پادشاهی را در بهشت و پارسایی در دوزخ. پرسید که موجبِ درجاتِ این چیست و سبب دَرَکاتِ آن؟ که مردم به خلاف این معتقد بودند. ندا آمد که این پادشه به ارادتِ درویشان به بهشت اندر است و این پارسا به تقرّبِ پادشاهان در دوزخ.",
+    "tr": "Salih bir kişi rüyasında bir hükümdarı cennette, bir zahidi cehennemde gördü. Halk bunun tersini beklerken sebebini sordu. Bir ses, hükümdarın dervişlere bağlılığı yüzünden cennette, zahidin ise hükümdarlara yakınlığı yüzünden cehennemde olduğunu söyledi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 2، حکایت 18، گزیده",
+    "fa": "عابدی را پادشاهی طلب کرد. اندیشید که دارویی بخورم تا ضعیف شوم، مگر اعتقادی که دارد در حقِّ من زیادت کند. آورده‌اند که داروی قاتل بخورد و بمرد.",
+    "tr": "Bir hükümdar bir ibadet ehlini çağırdı. Adam, hükümdarın kendisine inancı artsın diye zayıf düşürecek bir ilaç almayı düşündü. Anlatıldığına göre öldürücü ilaç içti ve öldü."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 2، حکایت 21، گزیده",
+    "fa": "لقمان را گفتند: ادب از که آموختی؟ گفت: از بی ادبان؛ هر چه از ایشان در نظرم ناپسند آمد از فعلِ آن پرهیز کردم.",
+    "tr": "Lokman'a, «Edebi kimden öğrendin?» diye sordular. «Edepsizlerden; onlarda hoşuma gitmeyen her davranıştan kaçındım» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 3، حکایت 2، گزیده",
+    "fa": "دو امیرزاده در مصر بودند، یکی علم آموخت و دیگری مال اندوخت. عاقبة‌الاَمر آن یکی عَلّامهٔ عصر گشت و این یکی عزیزِ مصر شد. پس این توانگر به چشمِ حقارت در فقیه نظر کردی و گفتی: من به سلطنت رسیدم و این همچنان در مَسْکَنَت بمانده است. گفت: ای برادر! شکرِ نعمتِ باری، عَزّ‌َ‌اِسْمُهُ، همچنان افزون‌تر است بر من که میراثِ پیغمبران یافتم یعنی علم و تو را میراثِ فرعون و هامان رسید یعنی مُلکِ مصر.",
+    "tr": "Mısır'da iki şehzade vardı: biri ilim öğrendi, diğeri mal biriktirdi. Biri çağının âlimi, diğeri Mısır'ın yöneticisi oldu. Zengin olan, fakiri küçümseyerek kendisinin hükümdar olduğunu, ötekinin yoksul kaldığını söyledi. Âlim, «Ben peygamberlerin mirası olan ilme kavuştum; sana ise Firavun ile Hâmân'ın mirası, Mısır mülkü kaldı» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 3، حکایت 18، گزیده",
+    "fa": "هرگز از دورِ زمان ننالیده بودم و روی از گردشِ آسمان در هم نکشیده، مگر وقتی که پایم برهنه مانده بود و استطاعتِ پای‌پوشی نداشتم. به جامعِ کوفه در‌آمدم دلتنگ، یکی را دیدم که پای نداشت. سپاسِ نعمتِ حق به جای آوردم و بر بی‌کفشی صبر کردم.",
+    "tr": "Zamandan hiç yakınmamıştım; ancak bir defa ayakkabım yoktu ve almaya da gücüm yetmiyordu. Kûfe camisinde üzgünken ayakları olmayan birini gördüm. Allah'ın nimetine şükrettim ve ayakkabısızlığa sabrettim."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 3، حکایت 23، گزیده",
+    "fa": "صیّادی ضعیف را ماهیِ قوی به دام اندر افتاد، طاقتِ حفظِ آن نداشت. ماهی بر او غالب آمد و دام از دستش در‌ رُبود و برَفت.",
+    "tr": "Güçsüz bir balıkçının ağına güçlü bir balık takıldı; balıkçı onu tutamadı. Balık üstün gelip ağı elinden çekti ve kaçtı."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 6، حکایت 4، گزیده",
+    "fa": "روزی به غرور جوانی سخت رانده بودم و شبانگاه به پای گریوه‌ای سست مانده. پیرمردی ضعیف از پس کاروان همی‌آمد و گفت: چه نشینی که نه جای خفتن است؟ گفتم: چون روم که نه پای رفتن است؟! گفت: این نشنیدی که صاحبدلان گفته‌اند: رفتن و نشستن به که دویدن و گسستن.",
+    "tr": "Bir gün gençliğin gururuyla hızla yol aldım ve akşam bir yokuşun dibinde yorgun düştüm. Kervanın ardından gelen güçsüz bir yaşlı, «Burası uyuyacak yer değil; niçin oturuyorsun?» dedi. «Yürüyecek gücüm yokken nasıl gideyim?» dedim. «Yürüyüp dinlenmek, koşup tükenmekten iyidir sözünü duymadın mı?» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 6، حکایت 6، گزیده",
+    "fa": "وقتی به جهل جوانی بانگ بر مادر زدم؛ دل‌آزرده به کنجی نشست و گریان همی‌گفت: مگر خُردی فراموش کردی که درشتی می‌کنی؟",
+    "tr": "Gençliğin bilgisizliğiyle bir gün anneme bağırdım. Gönlü kırılarak bir köşeye oturdu ve ağlayarak, «Kabalık ettiğine göre küçüklüğünü unuttun mu?» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 6، حکایت 7، گزیده",
+    "fa": "توانگری بخیل را پسری رنجور بود. نیکخواهان گفتندش: مصلحت آن است که ختم قرآنی کنی از بهر وی یا بذل قربانی. لختی به اندیشه فرورفت و گفت: مُصْحَفِ مهجور اولیتر است که گلهٔ دور. صاحبدلی بشنید و گفت: ختمش به علت آن اختیار آمد که قرآن بر سرِ زبان است و زر در میانِ جان.",
+    "tr": "Cimri bir zenginin hasta bir oğlu vardı. İyiliğini isteyenler, oğul için Kur'an hatmetmesini veya kurban vermesini önerdi. Adam düşündü ve «Terk edilmiş mushaf, uzaktaki sürüden daha uygundur» dedi. Bunu duyan bir gönül ehli, «Hatmi seçti, çünkü Kur'an dilinin ucunda, altın ise canının içinde» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 7، حکایت 1، گزیده",
+    "fa": "یکی را از وزرا پسری کودن بود. پیش یکی از دانشمندان فرستاد که مر این را تربیتی می‌کن مگر که عاقل شود. روزگاری تعلیم کردش و مؤثر نبود. پیش پدرش کس فرستاد که این عاقل نمی‌باشد و مرا دیوانه کرد.",
+    "tr": "Bir vezirin anlayışı kıt bir oğlu vardı. Onu, akıllansın diye bir bilginin yanına eğitime gönderdi. Bilgin bir süre uğraştı ama sonuç alamadı; babasına, «Bu akıllanmıyor, beni de deli etti» diye haber gönderdi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 7، حکایت 2، گزیده",
+    "fa": "حکیمی پسران را پند همی‌داد که جانان پدر، هنر آموزید که مُلک و دولت دنیا اعتماد را نشاید و سیم و زر، در سفر بر محل خطر است؛ یا دزد به یک‌بار بِبَرد یا خواجه به تَفاریق بخورد. اما هنر چشمهٔ زاینده است و دولت پاینده وگر هنرمند از دولت بیفتد غم نباشد که هنر در نفس خود دولت است؛ هر جا که رود قدر بیند و در صدر نشیند و بی هنر لقمه چیند و سختی بیند.",
+    "tr": "Bir bilge oğullarına öğüt verdi: «Canlarım, bir hüner öğrenin. Dünya malına güven olmaz; altın ve gümüş yolculukta tehlikededir, ya hırsız hepsini alır ya da sahibi azar azar harcar. Hüner ise tükenmeyen kaynak ve kalıcı servettir. Hünerli kişi malını yitirse de üzülmez; hünerin kendisi servettir. Nereye gitse değer görür; hünersizse lokma toplar ve güçlük çeker.»"
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 7، حکایت 6، گزیده",
+    "fa": "پادشاهی پسری را به ادیبی داد و گفت: این فرزند توست، تربیتش همچنان کن که یکی از فرزندان خویش. ادیب خدمت کرد و متقبل شد و سالی چند بر او سعی کرد و به جایی نرسید و پسران ادیب در فضل و بلاغت منتهی شدند. ملک دانشمند را مؤاخذت کرد و معاتبت فرمود که وعده خلاف کردی و وفا به جا نیاوردی. گفت: بر رای خداوند روی زمین پوشیده نماند که تربیت یکسان است و طباع مختلف.",
+    "tr": "Bir hükümdar oğlunu bir eğitimciye teslim edip kendi çocukları gibi yetiştirmesini istedi. Eğitimci yıllarca uğraştıysa da çocuk ilerlemedi; kendi oğulları ise bilgi ve güzel konuşmada yetişti. Hükümdar onu sözünü tutmamakla suçladı. Eğitimci, «Eğitim aynı, fakat yaradılışlar farklıdır» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 7، حکایت 8، گزیده",
+    "fa": "اعرابیی را دیدم که پسر را همی‌گفت یا بُنَّی اِنَّک مسئولٌ یومَ القیامةِ ماذا اکتَسَبتَ و لا یُقالُ بمن انتسبتَ. یعنی تو را خواهند پرسید که عملت چیست نگویند پدرت کیست.",
+    "tr": "Bir Arap'ın oğluna şöyle dediğini gördüm: «Yavrucuğum, kıyamet günü sana ne kazandığın sorulacak, kimin soyundan geldiğin değil.» Yani sana babanın kim olduğu değil, yaptığın işler sorulur."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 7، حکایت 13، گزیده",
+    "fa": "هندویی نفط‌‌اندازی همی‌ آموخت. حکیمی گفت تو را که خانه نیین است، بازی نه این است.",
+    "tr": "Bir Hintli, ateşle yapılan bir oyun öğreniyordu. Bir bilge, «Evin kamıştan yapılmışken bu oyun sana göre değil» dedi."
+  },
+  {
+    "category": "story",
+    "author": "سعدی",
+    "source": "گلستان، باب 7، حکایت 16، گزیده",
+    "fa": "پارسایی بر یکی از خداوندان نعمت گذر کرد که بنده‌ای را دست و پای استوار بسته عقوبت همی‌کرد. گفت: ای پسر همچو تو مخلوقی را خدای عز ّو جل اسیر حکم تو گردانیده است و تو را بر وی فضیلت داده شکر نعمت باری تعالی به جای آر و چندین جفا بر وی مپسند، نباید که فردای قیامت به از تو باشد و شرمساری بری.",
+    "tr": "Bir zahit, ellerini ve ayaklarını bağladığı bir köleye eziyet eden zengin birine rastladı. Ona şöyle dedi: «Allah senin gibi bir yaratığı senin buyruğuna verdi ve seni ona üstün kıldı. Bu nimete şükret; ona bunca eziyeti uygun görme. Kıyamette senden daha iyi durumda olur da utanırsın.»"
   }
 ]

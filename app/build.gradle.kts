@@ -1,7 +1,7 @@
 plugins { id("com.android.application"); id("org.jetbrains.kotlin.android") }
 
-val tagVersion = System.getenv("VERSION_NAME") ?: "1.0.1"
-val tagCode = System.getenv("VERSION_CODE")?.toIntOrNull() ?: 1000001
+val tagVersion = System.getenv("VERSION_NAME") ?: "1.0.2"
+val tagCode = System.getenv("VERSION_CODE")?.toIntOrNull() ?: 1000002
 android {
     namespace = "com.auracharge"
     compileSdk = 34
@@ -51,4 +51,10 @@ dependencies {
     implementation("androidx.core:core-ktx:1.13.1")
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.json:json:20240303")
+}
+
+tasks.withType<Test>().configureEach {
+    inputs.file("src/main/assets/library.json")
+    inputs.file("../scripts/library.tsv")
+    inputs.dir("src/main/res/raw")
 }

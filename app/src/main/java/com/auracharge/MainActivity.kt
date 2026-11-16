@@ -169,7 +169,7 @@ fun SettingsScreen(model: ChargeViewModel, onPreview: () -> Unit, onMonitor: (Bo
         Text(stringResource(R.string.monitor_help), style = MaterialTheme.typography.bodySmall)
         Toggle(stringResource(R.string.lock_only), model.get("lock_only", false)) { model.put("lock_only", it) }
         Text(stringResource(R.string.category), style = MaterialTheme.typography.titleMedium)
-        listOf("poetry" to stringResource(R.string.poetry), "story" to stringResource(R.string.story), "wisdom" to stringResource(R.string.wisdom), "spiritual" to stringResource(R.string.spiritual), "custom" to stringResource(R.string.mine)).forEach { (category, label) ->
+        listOf("poetry" to stringResource(R.string.poetry), "story" to stringResource(R.string.story), "religious" to stringResource(R.string.religious), "educational" to stringResource(R.string.educational), "wisdom" to stringResource(R.string.wisdom), "spiritual" to stringResource(R.string.spiritual), "custom" to stringResource(R.string.mine)).forEach { (category, label) ->
             val count = if (category == "custom") model.texts.size else model.library.count { it.category == category }
             Toggle("$label ($count)", category in selected) { checked ->
                 model.put("categories", (if (checked) selected + category else selected - category).sorted().joinToString(","))
@@ -183,7 +183,7 @@ fun SettingsScreen(model: ChargeViewModel, onPreview: () -> Unit, onMonitor: (Bo
                 Text("${index + 1}. ${entry.fa.take(80)}\n${entry.tr.take(100)} · ${entry.author}", maxLines = 3)
             }
         }
-        Choices(stringResource(R.string.display), model.get("display", "both"), listOf("both" to stringResource(R.string.both), "fa" to stringResource(R.string.persian), "tr" to stringResource(R.string.turkish))) { model.put("display", it) }
+        Choices(stringResource(R.string.display), model.get("display", "both"), listOf("both" to stringResource(R.string.source_and_turkish), "fa" to stringResource(R.string.source_only), "tr" to stringResource(R.string.turkish))) { model.put("display", it) }
         Toggle(stringResource(R.string.shuffle), model.get("shuffle", false)) { model.put("shuffle", it) }
         SliderSetting(stringResource(R.string.speed), model.get("speed", 1f), .5f..2f) { model.put("speed", it) }
         SliderSetting(stringResource(R.string.size), model.get("size", 1f), .7f..1.3f) { model.put("size", it) }
@@ -194,11 +194,11 @@ fun SettingsScreen(model: ChargeViewModel, onPreview: () -> Unit, onMonitor: (Bo
         Toggle(stringResource(R.string.haptics), model.get("haptics", true)) { model.put("haptics", it) }
         HorizontalDivider()
         Toggle(stringResource(R.string.music), model.get("music", true)) { model.put("music", it) }
-        Choices(stringResource(R.string.track), model.get("track", "1"), listOf("1" to "I", "2" to "II", "3" to "III", "4" to "IV", "5" to "V", "6" to "VI", "custom" to stringResource(R.string.custom_audio))) { audioPreview.stop(); testingAudio = false; model.put("track", it) }
+        Choices(stringResource(R.string.track), model.get("track", "category"), listOf("category" to stringResource(R.string.category_music), "poetry_1" to "${stringResource(R.string.poetry)} 1", "poetry_2" to "${stringResource(R.string.poetry)} 2", "story_1" to "${stringResource(R.string.story)} 1", "story_2" to "${stringResource(R.string.story)} 2", "religious_1" to "${stringResource(R.string.spiritual)} 1", "religious_2" to "${stringResource(R.string.spiritual)} 2", "1" to "I", "2" to "II", "3" to "III", "4" to "IV", "5" to "V", "6" to "VI", "custom" to stringResource(R.string.custom_audio))) { audioPreview.stop(); testingAudio = false; model.put("track", it) }
         Button(onClick = { audioPicker.launch(arrayOf("audio/*")) }) { Text(stringResource(R.string.choose_audio)) }
         SliderSetting(stringResource(R.string.volume), model.get("volume", .35f), 0f..1f) { model.put("volume", it); if (testingAudio) audioPreview.setVolume(it) }
         Toggle(stringResource(R.string.silent), model.get("silent", false)) { model.put("silent", it); audioPreview.stop(); testingAudio = false }
-        Button(onClick = { if (testingAudio) { audioPreview.stop(); testingAudio = false } else testingAudio = audioPreview.start(model.get("track", "1"), model.get("volume", .35f), model.get("silent", false), model.get("audio_uri", "")) }) { Text(stringResource(if (testingAudio) R.string.stop_music else R.string.test_music)) }
+        Button(onClick = { if (testingAudio) { audioPreview.stop(); testingAudio = false } else testingAudio = audioPreview.start(resolveTrack(model.get("track", "category"), "poetry", 0), model.get("volume", .35f), model.get("silent", false), model.get("audio_uri", "")) }) { Text(stringResource(if (testingAudio) R.string.stop_music else R.string.test_music)) }
         Text(stringResource(R.string.media_volume_help), style = MaterialTheme.typography.bodySmall)
         HorizontalDivider()
         Text(stringResource(R.string.my_texts), style = MaterialTheme.typography.titleLarge)

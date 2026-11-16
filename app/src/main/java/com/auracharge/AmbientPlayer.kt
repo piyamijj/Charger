@@ -14,6 +14,16 @@ import android.os.Looper
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 
+fun categoryTracks(category: String): List<String> = when (category) {
+    "poetry" -> listOf("poetry_1", "poetry_2")
+    "story", "wisdom" -> listOf("story_1", "story_2")
+    "spiritual", "religious", "educational" -> listOf("religious_1", "religious_2")
+    else -> listOf("poetry_1", "poetry_2")
+}
+
+fun resolveTrack(track: String, category: String, index: Int): String =
+    if (track == "category") categoryTracks(category)[Math.floorMod(index, 2)] else track
+
 class AmbientPlayer(private val context: Context) {
     private val manager = context.getSystemService(AudioManager::class.java)
     private val handler = Handler(Looper.getMainLooper())
@@ -47,7 +57,13 @@ class AmbientPlayer(private val context: Context) {
                 if (custom.isBlank()) { stop(); Toast.makeText(context, R.string.audio_error, Toast.LENGTH_SHORT).show(); return false }
                 next.setDataSource(context, Uri.parse(custom))
             } else {
-                val resource = when (track) { "2" -> R.raw.ambient2; "3" -> R.raw.ambient3; "4" -> R.raw.ambient4; "5" -> R.raw.ambient5; "6" -> R.raw.ambient6; else -> R.raw.ambient1 }
+                val resource = when (track) {
+                    "2" -> R.raw.ambient2; "3" -> R.raw.ambient3; "4" -> R.raw.ambient4; "5" -> R.raw.ambient5; "6" -> R.raw.ambient6
+                    "poetry_1" -> R.raw.poetry_1; "poetry_2" -> R.raw.poetry_2
+                    "story_1" -> R.raw.story_1; "story_2" -> R.raw.story_2
+                    "religious_1" -> R.raw.religious_1; "religious_2" -> R.raw.religious_2
+                    else -> R.raw.ambient1
+                }
                 context.resources.openRawResourceFd(resource).use { next.setDataSource(it.fileDescriptor, it.startOffset, it.length) }
             }
             next.isLooping = true

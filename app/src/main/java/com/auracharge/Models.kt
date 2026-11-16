@@ -69,6 +69,15 @@ class ChargeViewModel(application: Application) : AndroidViewModel(application) 
         parseLibrary(application.assets.open("library.json").bufferedReader(Charsets.UTF_8).use { it.readText() })
     }.onFailure { android.util.Log.e("AuraCharge", "Cannot load library", it) }.getOrDefault(emptyList())
     init {
+        if (!preferences.getBoolean("categories_v102_migrated", false)) {
+            val saved = preferences.getString("categories", null)
+            val edit = preferences.edit().putBoolean("categories_v102_migrated", true)
+            if (saved != null) {
+                val selected = saved.split(',').filter { it.isNotBlank() }.toSet()
+                if ("spiritual" in selected) edit.putString("categories", (selected + "religious" + "educational").sorted().joinToString(","))
+            }
+            edit.apply()
+        }
         val data = runCatching { JSONArray(preferences.getString("texts", "[]")) }.getOrDefault(JSONArray())
         for (index in 0 until data.length()) texts.add(data.optString(index))
     }
@@ -88,7 +97,7 @@ class ChargeViewModel(application: Application) : AndroidViewModel(application) 
     fun selectedCategories(): Set<String> {
         val source = get("source", "library")
         val category = get("category", "all")
-        val builtIn = if (source == "mine") emptySet() else if (category == "all") setOf("poetry", "story", "wisdom", "spiritual") else setOf(category)
+        val builtIn = if (source == "mine") emptySet() else if (category == "all") setOf("poetry", "story", "wisdom", "spiritual", "religious", "educational") else setOf(category)
         val legacy = builtIn + if (source != "library") setOf("custom") else emptySet()
         return get("categories", legacy.joinToString(",")).split(',').filter { it.isNotBlank() }.toSet()
     }
